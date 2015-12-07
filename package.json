@@ -1,0 +1,39 @@
+{
+  "name": "flightstats",
+  "version": "0.0.0",
+  "description": "FlightStats API Client",
+  "license": "MIT",
+  "keywords": [
+    "flightstats",
+    "api",
+    "client",
+    "flight",
+    "airline",
+    "airport",
+    "iata",
+    "icao"
+  ],
+  "main": "lib/flightstats.js",
+  "author": "Jonas Hermsmeier <jhermsmeier@gmail.com> (https://jhermsmeier.de/)",
+  "dependencies": {
+    "debug": "~2.2.0",
+    "request": "~2.67.0"
+  },
+  "devDependencies": {
+    "mocha": "~2.3.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "homepage": "https://github.com/jhermsmeier/node-flightstats",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhermsmeier/node-flightstats.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jhermsmeier/node-flightstats/issues"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
