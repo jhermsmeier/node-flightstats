@@ -1,6 +1,7 @@
-var assert = require( 'assert' )
+var dotenv = require( 'dotenv' ).config()
 var FlightStats = require( '..' )
+var assert = require( 'assert' )
 
-describe( 'FlightStats', function() {
+suite( 'FlightStats', function() {
   
 })

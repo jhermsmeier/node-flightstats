@@ -20,10 +20,11 @@
     "request": "~2.67.0"
   },
   "devDependencies": {
+    "dotenv": "~2.0.0",
     "mocha": "~2.3.4"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --ui tdd"
   },
   "homepage": "https://github.com/jhermsmeier/node-flightstats",
   "repository": {
