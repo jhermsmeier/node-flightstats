@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0
+- Fix `/airlines` request URL construction
+- Return the `request` object from a method call (instead of `this`)
+
 ## 0.2.0
 - Enhanced request error message with URL in question
 - Implemented `#getAirlines()` and added tests for it
