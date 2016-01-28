@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0
+- Added `CODES.md`
+- Enabled `category` in response data of `.getAirlines()`
+- Added boolean `scheduled` key to `FlightStats.AirlineCategory` data
+- Added `code` key (category code) to `FlightStats.AirlineCategory` data
+- Patched inconsistent API response on ICAO airline code lookups
+- Reworded `Data needed` -> `Data Not Available`
+
 ## 0.3.0
 - Fix `/airlines` request URL construction
 - Return the `request` object from a method call (instead of `this`)
