@@ -1,0 +1,193 @@
+{
+  "request": {
+    "airline": {
+      "requestedCode": "LH",
+      "airline": {
+        "fs": "LH",
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa",
+        "active": true,
+        "category": "I"
+      }
+    },
+    "flight": {
+      "requested": "2054",
+      "interpreted": "2054"
+    },
+    "date": {
+      "year": "2016",
+      "month": "2",
+      "day": "2",
+      "interpreted": "2016-02-02"
+    },
+    "utc": {
+      "interpreted": false
+    },
+    "airport": {
+      "requestedCode": "TXL",
+      "airport": {
+        "fs": "TXL",
+        "iata": "TXL",
+        "icao": "EDDT",
+        "name": "Tegel Airport",
+        "city": "Berlin",
+        "cityCode": "BER",
+        "countryCode": "DE",
+        "countryName": "Germany",
+        "regionName": "Europe",
+        "timeZoneRegionName": "Europe/Berlin",
+        "localTime": "2016-02-01T18:43:16.602",
+        "utcOffsetHours": 1,
+        "latitude": 52.553944,
+        "longitude": 13.291722,
+        "elevationFeet": 121,
+        "classification": 1,
+        "active": true,
+        "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/TXL?codeType=fs",
+        "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/TXL?codeType=fs"
+      }
+    },
+    "codeType": {},
+    "extendedOptions": {
+      "requested": "includeNewFields+useHttpErrors+useInlinedReferences",
+      "interpreted": "includeNewFields+useHttpErrors+useInlinedReferences"
+    },
+    "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/status/LH/2054/arr/2016/2/2"
+  },
+  "appendix": {},
+  "flightStatuses": [
+    {
+      "flightId": 664825365,
+      "carrier": {
+        "fs": "LH",
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa",
+        "active": true,
+        "category": "I"
+      },
+      "flightNumber": "2054",
+      "departureAirport": {
+        "fs": "MUC",
+        "iata": "MUC",
+        "icao": "EDDM",
+        "name": "Franz Josef Strauss Airport",
+        "city": "Munich",
+        "cityCode": "MUC",
+        "countryCode": "DE",
+        "countryName": "Germany",
+        "regionName": "Europe",
+        "timeZoneRegionName": "Europe/Berlin",
+        "localTime": "2016-02-01T18:43:16.605",
+        "utcOffsetHours": 1,
+        "latitude": 48.353005,
+        "longitude": 11.790143,
+        "elevationFeet": 1486,
+        "classification": 1,
+        "active": true,
+        "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/MUC?codeType=fs",
+        "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/MUC?codeType=fs"
+      },
+      "arrivalAirport": {
+        "fs": "TXL",
+        "iata": "TXL",
+        "icao": "EDDT",
+        "name": "Tegel Airport",
+        "city": "Berlin",
+        "cityCode": "BER",
+        "countryCode": "DE",
+        "countryName": "Germany",
+        "regionName": "Europe",
+        "timeZoneRegionName": "Europe/Berlin",
+        "localTime": "2016-02-01T18:43:16.605",
+        "utcOffsetHours": 1,
+        "latitude": 52.553944,
+        "longitude": 13.291722,
+        "elevationFeet": 121,
+        "classification": 1,
+        "active": true,
+        "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/TXL?codeType=fs",
+        "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/TXL?codeType=fs"
+      },
+      "departureDate": {
+        "dateLocal": "2016-02-02T21:30:00.000",
+        "dateUtc": "2016-02-02T20:30:00.000Z"
+      },
+      "arrivalDate": {
+        "dateLocal": "2016-02-02T22:40:00.000",
+        "dateUtc": "2016-02-02T21:40:00.000Z"
+      },
+      "status": "S",
+      "schedule": {
+        "flightType": "J",
+        "serviceClasses": "FJY",
+        "restrictions": ""
+      },
+      "operationalTimes": {
+        "publishedDeparture": {
+          "dateLocal": "2016-02-02T21:30:00.000",
+          "dateUtc": "2016-02-02T20:30:00.000Z"
+        },
+        "publishedArrival": {
+          "dateLocal": "2016-02-02T22:40:00.000",
+          "dateUtc": "2016-02-02T21:40:00.000Z"
+        },
+        "scheduledGateDeparture": {
+          "dateLocal": "2016-02-02T21:30:00.000",
+          "dateUtc": "2016-02-02T20:30:00.000Z"
+        },
+        "scheduledGateArrival": {
+          "dateLocal": "2016-02-02T22:40:00.000",
+          "dateUtc": "2016-02-02T21:40:00.000Z"
+        }
+      },
+      "codeshares": [
+        {
+          "carrier": {
+            "fs": "OU",
+            "iata": "OU",
+            "icao": "CTN",
+            "name": "Croatia Airlines",
+            "active": true,
+            "category": "I"
+          },
+          "flightNumber": "5432",
+          "relationship": "L"
+        }
+      ],
+      "flightDurations": {
+        "scheduledBlockMinutes": 70
+      },
+      "airportResources": {
+        "departureTerminal": "2"
+      },
+      "flightEquipment": {
+        "scheduledEquipment": {
+          "iata": "321",
+          "name": "Airbus A321",
+          "turboProp": false,
+          "jet": true,
+          "widebody": false,
+          "regional": false
+        }
+      },
+      "operatingCarrier": {
+        "fs": "LH",
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa",
+        "active": true,
+        "category": "I"
+      },
+      "primaryCarrier": {
+        "fs": "LH",
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa",
+        "active": true,
+        "category": "I"
+      }
+    }
+  ]
+}

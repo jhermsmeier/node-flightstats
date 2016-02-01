@@ -1,0 +1,711 @@
+{
+  "request": {
+    "airline": {
+      "requestedCode": "WN",
+      "airline": {
+        "fs": "WN",
+        "iata": "WN",
+        "icao": "SWA",
+        "name": "Southwest Airlines",
+        "phoneNumber": "1-800-435-9792",
+        "active": true,
+        "category": "I"
+      }
+    },
+    "flight": {
+      "requested": "448",
+      "interpreted": "448"
+    },
+    "date": {
+      "year": "2016",
+      "month": "2",
+      "day": "1",
+      "interpreted": "2016-02-01"
+    },
+    "utc": {
+      "interpreted": false
+    },
+    "airport": {},
+    "codeType": {},
+    "extendedOptions": {
+      "requested": "includeNewFields+useHttpErrors+useInlinedReferences",
+      "interpreted": "includeNewFields+useHttpErrors+useInlinedReferences"
+    },
+    "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/status/WN/448/arr/2016/2/1"
+  },
+  "appendix": {},
+  "flightStatuses": [
+    {
+      "flightId": 664323149,
+      "carrier": {
+        "fs": "WN",
+        "iata": "WN",
+        "icao": "SWA",
+        "name": "Southwest Airlines",
+        "phoneNumber": "1-800-435-9792",
+        "active": true,
+        "category": "I"
+      },
+      "flightNumber": "448",
+      "departureAirport": {
+        "fs": "FLL",
+        "iata": "FLL",
+        "icao": "KFLL",
+        "faa": "FLL",
+        "name": "Fort Lauderdale-Hollywood International Airport",
+        "street1": "320 Terminal Drive",
+        "city": "Fort Lauderdale",
+        "cityCode": "FLL",
+        "stateCode": "FL",
+        "countryCode": "US",
+        "countryName": "United States",
+        "regionName": "North America",
+        "timeZoneRegionName": "America/New_York",
+        "weatherZone": "FLZ072",
+        "localTime": "2016-02-01T13:41:11.355",
+        "utcOffsetHours": -5,
+        "latitude": 26.071492,
+        "longitude": -80.144908,
+        "elevationFeet": 9,
+        "classification": 1,
+        "active": true,
+        "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/FLL?codeType=fs",
+        "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/FLL?codeType=fs"
+      },
+      "arrivalAirport": {
+        "fs": "BWI",
+        "iata": "BWI",
+        "icao": "KBWI",
+        "faa": "BWI",
+        "name": "Baltimore/Wash International Thurgood Marshall Airport",
+        "city": "Baltimore",
+        "cityCode": "BWI",
+        "stateCode": "MD",
+        "postalCode": "21240",
+        "countryCode": "US",
+        "countryName": "United States",
+        "regionName": "North America",
+        "timeZoneRegionName": "America/New_York",
+        "weatherZone": "MDZ014",
+        "localTime": "2016-02-01T13:41:11.355",
+        "utcOffsetHours": -5,
+        "latitude": 39.179526,
+        "longitude": -76.668941,
+        "elevationFeet": 146,
+        "classification": 1,
+        "active": true,
+        "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/BWI?codeType=fs",
+        "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/BWI?codeType=fs"
+      },
+      "departureDate": {
+        "dateLocal": "2016-02-01T10:45:00.000",
+        "dateUtc": "2016-02-01T15:45:00.000Z"
+      },
+      "arrivalDate": {
+        "dateLocal": "2016-02-01T13:15:00.000",
+        "dateUtc": "2016-02-01T18:15:00.000Z"
+      },
+      "status": "L",
+      "schedule": {
+        "flightType": "J",
+        "serviceClasses": "RY",
+        "restrictions": "F",
+        "downlines": [
+          {
+            "arrivalAirport": {
+              "fs": "BOS",
+              "iata": "BOS",
+              "icao": "KBOS",
+              "faa": "BOS",
+              "name": "Logan International Airport",
+              "street1": "One Harborside Drive",
+              "street2": "",
+              "city": "Boston",
+              "cityCode": "BOS",
+              "stateCode": "MA",
+              "postalCode": "02128-2909",
+              "countryCode": "US",
+              "countryName": "United States",
+              "regionName": "North America",
+              "timeZoneRegionName": "America/New_York",
+              "weatherZone": "MAZ015",
+              "localTime": "2016-02-01T13:41:11.355",
+              "utcOffsetHours": -5,
+              "latitude": 42.36646,
+              "longitude": -71.020176,
+              "elevationFeet": 19,
+              "classification": 1,
+              "active": true,
+              "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/BOS?codeType=fs",
+              "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/BOS?codeType=fs"
+            },
+            "flightId": 664304990
+          },
+          {
+            "arrivalAirport": {
+              "fs": "MDW",
+              "iata": "MDW",
+              "icao": "KMDW",
+              "faa": "MDW",
+              "name": "Chicago Midway International Airport",
+              "street1": "5700 South Cicero",
+              "city": "Chicago",
+              "cityCode": "CHI",
+              "stateCode": "IL",
+              "postalCode": "60638",
+              "countryCode": "US",
+              "countryName": "United States",
+              "regionName": "North America",
+              "timeZoneRegionName": "America/Chicago",
+              "weatherZone": "ILZ014",
+              "localTime": "2016-02-01T12:41:11.355",
+              "utcOffsetHours": -6,
+              "latitude": 41.788136,
+              "longitude": -87.740871,
+              "elevationFeet": 620,
+              "classification": 1,
+              "active": true,
+              "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/MDW?codeType=fs",
+              "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/MDW?codeType=fs"
+            },
+            "flightId": 664303278
+          }
+        ]
+      },
+      "operationalTimes": {
+        "publishedDeparture": {
+          "dateLocal": "2016-02-01T10:45:00.000",
+          "dateUtc": "2016-02-01T15:45:00.000Z"
+        },
+        "publishedArrival": {
+          "dateLocal": "2016-02-01T13:15:00.000",
+          "dateUtc": "2016-02-01T18:15:00.000Z"
+        },
+        "scheduledGateDeparture": {
+          "dateLocal": "2016-02-01T10:45:00.000",
+          "dateUtc": "2016-02-01T15:45:00.000Z"
+        },
+        "estimatedGateDeparture": {
+          "dateLocal": "2016-02-01T10:39:00.000",
+          "dateUtc": "2016-02-01T15:39:00.000Z"
+        },
+        "actualGateDeparture": {
+          "dateLocal": "2016-02-01T10:39:00.000",
+          "dateUtc": "2016-02-01T15:39:00.000Z"
+        },
+        "flightPlanPlannedDeparture": {
+          "dateLocal": "2016-02-01T10:59:00.000",
+          "dateUtc": "2016-02-01T15:59:00.000Z"
+        },
+        "estimatedRunwayDeparture": {
+          "dateLocal": "2016-02-01T10:59:00.000",
+          "dateUtc": "2016-02-01T15:59:00.000Z"
+        },
+        "actualRunwayDeparture": {
+          "dateLocal": "2016-02-01T10:59:00.000",
+          "dateUtc": "2016-02-01T15:59:00.000Z"
+        },
+        "scheduledGateArrival": {
+          "dateLocal": "2016-02-01T13:15:00.000",
+          "dateUtc": "2016-02-01T18:15:00.000Z"
+        },
+        "estimatedGateArrival": {
+          "dateLocal": "2016-02-01T13:06:00.000",
+          "dateUtc": "2016-02-01T18:06:00.000Z"
+        },
+        "actualGateArrival": {
+          "dateLocal": "2016-02-01T13:06:00.000",
+          "dateUtc": "2016-02-01T18:06:00.000Z"
+        },
+        "flightPlanPlannedArrival": {
+          "dateLocal": "2016-02-01T13:07:00.000",
+          "dateUtc": "2016-02-01T18:07:00.000Z"
+        },
+        "estimatedRunwayArrival": {
+          "dateLocal": "2016-02-01T13:01:00.000",
+          "dateUtc": "2016-02-01T18:01:00.000Z"
+        },
+        "actualRunwayArrival": {
+          "dateLocal": "2016-02-01T13:01:00.000",
+          "dateUtc": "2016-02-01T18:01:00.000Z"
+        }
+      },
+      "flightDurations": {
+        "scheduledBlockMinutes": 150,
+        "blockMinutes": 147,
+        "scheduledAirMinutes": 128,
+        "airMinutes": 122,
+        "scheduledTaxiOutMinutes": 14,
+        "taxiOutMinutes": 20,
+        "scheduledTaxiInMinutes": 8,
+        "taxiInMinutes": 5
+      },
+      "airportResources": {
+        "departureTerminal": "1",
+        "departureGate": "B7",
+        "arrivalGate": "B11"
+      },
+      "flightEquipment": {
+        "scheduledEquipment": {
+          "iata": "73H",
+          "name": "Boeing 737-800 (winglets) Passenger/BBJ2",
+          "turboProp": false,
+          "jet": true,
+          "widebody": false,
+          "regional": false
+        },
+        "actualEquipment": {
+          "iata": "738",
+          "name": "Boeing 737-800 Passenger",
+          "turboProp": false,
+          "jet": true,
+          "widebody": false,
+          "regional": false
+        },
+        "tailNumber": "N8324A"
+      },
+      "operatingCarrier": {
+        "fs": "WN",
+        "iata": "WN",
+        "icao": "SWA",
+        "name": "Southwest Airlines",
+        "phoneNumber": "1-800-435-9792",
+        "active": true,
+        "category": "I"
+      },
+      "primaryCarrier": {
+        "fs": "WN",
+        "iata": "WN",
+        "icao": "SWA",
+        "name": "Southwest Airlines",
+        "phoneNumber": "1-800-435-9792",
+        "active": true,
+        "category": "I"
+      }
+    },
+    {
+      "flightId": 664304990,
+      "carrier": {
+        "fs": "WN",
+        "iata": "WN",
+        "icao": "SWA",
+        "name": "Southwest Airlines",
+        "phoneNumber": "1-800-435-9792",
+        "active": true,
+        "category": "I"
+      },
+      "flightNumber": "448",
+      "departureAirport": {
+        "fs": "BWI",
+        "iata": "BWI",
+        "icao": "KBWI",
+        "faa": "BWI",
+        "name": "Baltimore/Wash International Thurgood Marshall Airport",
+        "city": "Baltimore",
+        "cityCode": "BWI",
+        "stateCode": "MD",
+        "postalCode": "21240",
+        "countryCode": "US",
+        "countryName": "United States",
+        "regionName": "North America",
+        "timeZoneRegionName": "America/New_York",
+        "weatherZone": "MDZ014",
+        "localTime": "2016-02-01T13:41:11.356",
+        "utcOffsetHours": -5,
+        "latitude": 39.179526,
+        "longitude": -76.668941,
+        "elevationFeet": 146,
+        "classification": 1,
+        "active": true,
+        "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/BWI?codeType=fs",
+        "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/BWI?codeType=fs"
+      },
+      "arrivalAirport": {
+        "fs": "BOS",
+        "iata": "BOS",
+        "icao": "KBOS",
+        "faa": "BOS",
+        "name": "Logan International Airport",
+        "street1": "One Harborside Drive",
+        "street2": "",
+        "city": "Boston",
+        "cityCode": "BOS",
+        "stateCode": "MA",
+        "postalCode": "02128-2909",
+        "countryCode": "US",
+        "countryName": "United States",
+        "regionName": "North America",
+        "timeZoneRegionName": "America/New_York",
+        "weatherZone": "MAZ015",
+        "localTime": "2016-02-01T13:41:11.356",
+        "utcOffsetHours": -5,
+        "latitude": 42.36646,
+        "longitude": -71.020176,
+        "elevationFeet": 19,
+        "classification": 1,
+        "active": true,
+        "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/BOS?codeType=fs",
+        "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/BOS?codeType=fs"
+      },
+      "departureDate": {
+        "dateLocal": "2016-02-01T14:00:00.000",
+        "dateUtc": "2016-02-01T19:00:00.000Z"
+      },
+      "arrivalDate": {
+        "dateLocal": "2016-02-01T15:20:00.000",
+        "dateUtc": "2016-02-01T20:20:00.000Z"
+      },
+      "status": "S",
+      "schedule": {
+        "flightType": "J",
+        "serviceClasses": "RY",
+        "restrictions": "F",
+        "uplines": [
+          {
+            "departureAirport": {
+              "fs": "FLL",
+              "iata": "FLL",
+              "icao": "KFLL",
+              "faa": "FLL",
+              "name": "Fort Lauderdale-Hollywood International Airport",
+              "street1": "320 Terminal Drive",
+              "city": "Fort Lauderdale",
+              "cityCode": "FLL",
+              "stateCode": "FL",
+              "countryCode": "US",
+              "countryName": "United States",
+              "regionName": "North America",
+              "timeZoneRegionName": "America/New_York",
+              "weatherZone": "FLZ072",
+              "localTime": "2016-02-01T13:41:11.356",
+              "utcOffsetHours": -5,
+              "latitude": 26.071492,
+              "longitude": -80.144908,
+              "elevationFeet": 9,
+              "classification": 1,
+              "active": true,
+              "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/FLL?codeType=fs",
+              "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/FLL?codeType=fs"
+            },
+            "flightId": 664323149
+          }
+        ],
+        "downlines": [
+          {
+            "arrivalAirport": {
+              "fs": "MDW",
+              "iata": "MDW",
+              "icao": "KMDW",
+              "faa": "MDW",
+              "name": "Chicago Midway International Airport",
+              "street1": "5700 South Cicero",
+              "city": "Chicago",
+              "cityCode": "CHI",
+              "stateCode": "IL",
+              "postalCode": "60638",
+              "countryCode": "US",
+              "countryName": "United States",
+              "regionName": "North America",
+              "timeZoneRegionName": "America/Chicago",
+              "weatherZone": "ILZ014",
+              "localTime": "2016-02-01T12:41:11.356",
+              "utcOffsetHours": -6,
+              "latitude": 41.788136,
+              "longitude": -87.740871,
+              "elevationFeet": 620,
+              "classification": 1,
+              "active": true,
+              "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/MDW?codeType=fs",
+              "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/MDW?codeType=fs"
+            },
+            "flightId": 664303278
+          }
+        ]
+      },
+      "operationalTimes": {
+        "publishedDeparture": {
+          "dateLocal": "2016-02-01T14:00:00.000",
+          "dateUtc": "2016-02-01T19:00:00.000Z"
+        },
+        "publishedArrival": {
+          "dateLocal": "2016-02-01T15:20:00.000",
+          "dateUtc": "2016-02-01T20:20:00.000Z"
+        },
+        "scheduledGateDeparture": {
+          "dateLocal": "2016-02-01T14:00:00.000",
+          "dateUtc": "2016-02-01T19:00:00.000Z"
+        },
+        "flightPlanPlannedDeparture": {
+          "dateLocal": "2016-02-01T14:09:00.000",
+          "dateUtc": "2016-02-01T19:09:00.000Z"
+        },
+        "estimatedRunwayDeparture": {
+          "dateLocal": "2016-02-01T14:09:00.000",
+          "dateUtc": "2016-02-01T19:09:00.000Z"
+        },
+        "scheduledGateArrival": {
+          "dateLocal": "2016-02-01T15:20:00.000",
+          "dateUtc": "2016-02-01T20:20:00.000Z"
+        },
+        "flightPlanPlannedArrival": {
+          "dateLocal": "2016-02-01T15:03:00.000",
+          "dateUtc": "2016-02-01T20:03:00.000Z"
+        },
+        "estimatedRunwayArrival": {
+          "dateLocal": "2016-02-01T15:03:00.000",
+          "dateUtc": "2016-02-01T20:03:00.000Z"
+        }
+      },
+      "flightDurations": {
+        "scheduledBlockMinutes": 80,
+        "scheduledAirMinutes": 54,
+        "scheduledTaxiOutMinutes": 9,
+        "scheduledTaxiInMinutes": 17
+      },
+      "airportResources": {
+        "departureGate": "B11",
+        "arrivalTerminal": "A",
+        "arrivalGate": "A18"
+      },
+      "flightEquipment": {
+        "scheduledEquipment": {
+          "iata": "73H",
+          "name": "Boeing 737-800 (winglets) Passenger/BBJ2",
+          "turboProp": false,
+          "jet": true,
+          "widebody": false,
+          "regional": false
+        }
+      },
+      "operatingCarrier": {
+        "fs": "WN",
+        "iata": "WN",
+        "icao": "SWA",
+        "name": "Southwest Airlines",
+        "phoneNumber": "1-800-435-9792",
+        "active": true,
+        "category": "I"
+      },
+      "primaryCarrier": {
+        "fs": "WN",
+        "iata": "WN",
+        "icao": "SWA",
+        "name": "Southwest Airlines",
+        "phoneNumber": "1-800-435-9792",
+        "active": true,
+        "category": "I"
+      }
+    },
+    {
+      "flightId": 664303278,
+      "carrier": {
+        "fs": "WN",
+        "iata": "WN",
+        "icao": "SWA",
+        "name": "Southwest Airlines",
+        "phoneNumber": "1-800-435-9792",
+        "active": true,
+        "category": "I"
+      },
+      "flightNumber": "448",
+      "departureAirport": {
+        "fs": "BOS",
+        "iata": "BOS",
+        "icao": "KBOS",
+        "faa": "BOS",
+        "name": "Logan International Airport",
+        "street1": "One Harborside Drive",
+        "street2": "",
+        "city": "Boston",
+        "cityCode": "BOS",
+        "stateCode": "MA",
+        "postalCode": "02128-2909",
+        "countryCode": "US",
+        "countryName": "United States",
+        "regionName": "North America",
+        "timeZoneRegionName": "America/New_York",
+        "weatherZone": "MAZ015",
+        "localTime": "2016-02-01T13:41:11.357",
+        "utcOffsetHours": -5,
+        "latitude": 42.36646,
+        "longitude": -71.020176,
+        "elevationFeet": 19,
+        "classification": 1,
+        "active": true,
+        "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/BOS?codeType=fs",
+        "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/BOS?codeType=fs"
+      },
+      "arrivalAirport": {
+        "fs": "MDW",
+        "iata": "MDW",
+        "icao": "KMDW",
+        "faa": "MDW",
+        "name": "Chicago Midway International Airport",
+        "street1": "5700 South Cicero",
+        "city": "Chicago",
+        "cityCode": "CHI",
+        "stateCode": "IL",
+        "postalCode": "60638",
+        "countryCode": "US",
+        "countryName": "United States",
+        "regionName": "North America",
+        "timeZoneRegionName": "America/Chicago",
+        "weatherZone": "ILZ014",
+        "localTime": "2016-02-01T12:41:11.357",
+        "utcOffsetHours": -6,
+        "latitude": 41.788136,
+        "longitude": -87.740871,
+        "elevationFeet": 620,
+        "classification": 1,
+        "active": true,
+        "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/MDW?codeType=fs",
+        "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/MDW?codeType=fs"
+      },
+      "departureDate": {
+        "dateLocal": "2016-02-01T16:05:00.000",
+        "dateUtc": "2016-02-01T21:05:00.000Z"
+      },
+      "arrivalDate": {
+        "dateLocal": "2016-02-01T18:10:00.000",
+        "dateUtc": "2016-02-02T00:10:00.000Z"
+      },
+      "status": "S",
+      "schedule": {
+        "flightType": "J",
+        "serviceClasses": "RY",
+        "restrictions": "F",
+        "uplines": [
+          {
+            "departureAirport": {
+              "fs": "FLL",
+              "iata": "FLL",
+              "icao": "KFLL",
+              "faa": "FLL",
+              "name": "Fort Lauderdale-Hollywood International Airport",
+              "street1": "320 Terminal Drive",
+              "city": "Fort Lauderdale",
+              "cityCode": "FLL",
+              "stateCode": "FL",
+              "countryCode": "US",
+              "countryName": "United States",
+              "regionName": "North America",
+              "timeZoneRegionName": "America/New_York",
+              "weatherZone": "FLZ072",
+              "localTime": "2016-02-01T13:41:11.357",
+              "utcOffsetHours": -5,
+              "latitude": 26.071492,
+              "longitude": -80.144908,
+              "elevationFeet": 9,
+              "classification": 1,
+              "active": true,
+              "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/FLL?codeType=fs",
+              "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/FLL?codeType=fs"
+            },
+            "flightId": 664323149
+          },
+          {
+            "departureAirport": {
+              "fs": "BWI",
+              "iata": "BWI",
+              "icao": "KBWI",
+              "faa": "BWI",
+              "name": "Baltimore/Wash International Thurgood Marshall Airport",
+              "city": "Baltimore",
+              "cityCode": "BWI",
+              "stateCode": "MD",
+              "postalCode": "21240",
+              "countryCode": "US",
+              "countryName": "United States",
+              "regionName": "North America",
+              "timeZoneRegionName": "America/New_York",
+              "weatherZone": "MDZ014",
+              "localTime": "2016-02-01T13:41:11.357",
+              "utcOffsetHours": -5,
+              "latitude": 39.179526,
+              "longitude": -76.668941,
+              "elevationFeet": 146,
+              "classification": 1,
+              "active": true,
+              "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/BWI?codeType=fs",
+              "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/BWI?codeType=fs"
+            },
+            "flightId": 664304990
+          }
+        ]
+      },
+      "operationalTimes": {
+        "publishedDeparture": {
+          "dateLocal": "2016-02-01T16:05:00.000",
+          "dateUtc": "2016-02-01T21:05:00.000Z"
+        },
+        "publishedArrival": {
+          "dateLocal": "2016-02-01T18:10:00.000",
+          "dateUtc": "2016-02-02T00:10:00.000Z"
+        },
+        "scheduledGateDeparture": {
+          "dateLocal": "2016-02-01T16:05:00.000",
+          "dateUtc": "2016-02-01T21:05:00.000Z"
+        },
+        "flightPlanPlannedDeparture": {
+          "dateLocal": "2016-02-01T16:14:00.000",
+          "dateUtc": "2016-02-01T21:14:00.000Z"
+        },
+        "estimatedRunwayDeparture": {
+          "dateLocal": "2016-02-01T16:14:00.000",
+          "dateUtc": "2016-02-01T21:14:00.000Z"
+        },
+        "scheduledGateArrival": {
+          "dateLocal": "2016-02-01T18:10:00.000",
+          "dateUtc": "2016-02-02T00:10:00.000Z"
+        },
+        "flightPlanPlannedArrival": {
+          "dateLocal": "2016-02-01T17:22:00.000",
+          "dateUtc": "2016-02-01T23:22:00.000Z"
+        },
+        "estimatedRunwayArrival": {
+          "dateLocal": "2016-02-01T17:22:00.000",
+          "dateUtc": "2016-02-01T23:22:00.000Z"
+        }
+      },
+      "flightDurations": {
+        "scheduledBlockMinutes": 185,
+        "scheduledAirMinutes": 128,
+        "scheduledTaxiOutMinutes": 9,
+        "scheduledTaxiInMinutes": 48
+      },
+      "airportResources": {
+        "departureTerminal": "A",
+        "departureGate": "A18",
+        "arrivalGate": "A18"
+      },
+      "flightEquipment": {
+        "scheduledEquipment": {
+          "iata": "73H",
+          "name": "Boeing 737-800 (winglets) Passenger/BBJ2",
+          "turboProp": false,
+          "jet": true,
+          "widebody": false,
+          "regional": false
+        }
+      },
+      "operatingCarrier": {
+        "fs": "WN",
+        "iata": "WN",
+        "icao": "SWA",
+        "name": "Southwest Airlines",
+        "phoneNumber": "1-800-435-9792",
+        "active": true,
+        "category": "I"
+      },
+      "primaryCarrier": {
+        "fs": "WN",
+        "iata": "WN",
+        "icao": "SWA",
+        "name": "Southwest Airlines",
+        "phoneNumber": "1-800-435-9792",
+        "active": true,
+        "category": "I"
+      }
+    }
+  ]
+}
