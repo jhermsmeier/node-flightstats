@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.6.0
+- Add lib/format: Custom, consolidated response format
+- Enable trim_whitespace
+
+## 0.5.0
+- Update .npmignore: Add `test` directory
+- Add test/data/*.json
+- Update lib/flightstats.js: Fix schedule/status lookup time range
+- Update lib/service-type.js: Add `code` key
+- Update lib/codeshare-type.js: Add `code` key
+
 ## 0.4.0
 - Added `CODES.md`
 - Enabled `category` in response data of `.getAirlines()`
