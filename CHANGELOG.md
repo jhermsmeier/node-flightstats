@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.7.0
+- Add `extendedOptions` option for `lookup`, `status` and `schedule`
+- Simplify time window check in `lookup`
+- Add docblocks in code, usage and testing section to README
+
 ## 0.6.0
 - Add lib/format: Custom, consolidated response format
 - Enable trim_whitespace
