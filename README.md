@@ -49,6 +49,7 @@ var options = {
   flightNumber: {String},
   airport: {String}, // optional
   direction: {String}, // optional, defaults to `arriving`
+  extendedOptions: {Array}, // optional
 }
 ```
 
