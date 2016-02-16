@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.0
+- Impl formatted `includeDeltas` status update events
+- Fix `airportResources` in `format/status`
+
 ## 0.7.0
 - Add `extendedOptions` option for `lookup`, `status` and `schedule`
 - Simplify time window check in `lookup`
