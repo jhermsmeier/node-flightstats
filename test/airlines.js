@@ -27,7 +27,7 @@ suite( 'FlightStats', function() {
         all: true,
       }, function( error, data ) {
         assert.ifError( error )
-        assert.ok( data && data.airlines )
+        assert.ok( Array.isArray( data ) )
         next()
       })
     })
@@ -35,7 +35,7 @@ suite( 'FlightStats', function() {
     test( 'Active airlines', function( next ) {
       api.getAirlines( function( error, data ) {
         assert.ifError( error )
-        assert.ok( data && data.airlines )
+        assert.ok( Array.isArray( data ) )
         next()
       })
     })
@@ -45,7 +45,7 @@ suite( 'FlightStats', function() {
         date: new Date( '1994-01-01' ),
       }, function( error, data ) {
         assert.ifError( error )
-        assert.ok( data && data.airlines )
+        assert.ok( Array.isArray( data ) )
         next()
       })
     })
@@ -57,7 +57,7 @@ suite( 'FlightStats', function() {
         iata: 'LH'
       }, function( error, data ) {
         assert.ifError( error )
-        assert.ok( data && data.airlines )
+        assert.ok( Array.isArray( data ) )
         next()
       })
     })
@@ -68,7 +68,7 @@ suite( 'FlightStats', function() {
         date: new Date(),
       }, function( error, data ) {
         assert.ifError( error )
-        assert.ok( data && data.airlines )
+        assert.ok( Array.isArray( data ) )
         next()
       })
     })
@@ -78,7 +78,7 @@ suite( 'FlightStats', function() {
         icao: 'EZY',
       }, function( error, data ) {
         assert.ifError( error )
-        assert.ok( data && data.airlines )
+        assert.ok( Array.isArray( data ) )
         next()
       })
     })
@@ -89,7 +89,7 @@ suite( 'FlightStats', function() {
         date: new Date(),
       }, function( error, data ) {
         assert.ifError( error )
-        assert.ok( data && data.airlines )
+        assert.ok( Array.isArray( data ) )
         next()
       })
     })
