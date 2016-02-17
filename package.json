@@ -21,10 +21,11 @@
   },
   "devDependencies": {
     "dotenv": "~2.0.0",
-    "mocha": "~2.4.4"
+    "mocha": "~2.4.4",
+    "nsp": "~2.2.0"
   },
   "scripts": {
-    "test": "mocha --ui tdd"
+    "test": "nsp check && mocha --ui tdd"
   },
   "homepage": "https://github.com/jhermsmeier/node-flightstats",
   "repository": {
