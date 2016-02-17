@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.9.0
+- Add irregular operation updates
+- Improve status update structure
+- Add `nsp` known vulnerabilities check to `test`
+
 ## 0.8.0
 - Impl formatted `includeDeltas` status update events
 - Fix `airportResources` in `format/status`
