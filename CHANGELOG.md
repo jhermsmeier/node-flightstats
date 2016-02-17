@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.10.0
+- Make `getAirlines()` return an array
+- Trim excessive whitespace in airline names
+
 ## 0.9.0
 - Add irregular operation updates
 - Improve status update structure
