@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.11.0
+- Updated `request` to `~2.70.0`
+- Added additional filtering by `airport` parameter, in case the API ignores the parameter
+
 ## 0.10.0
 - Make `getAirlines()` return an array
 - Trim excessive whitespace in airline names
