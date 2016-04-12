@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.11.1
+- Fixed `ReferenceError: dir is not defined`
+
 ## 0.11.0
 - Updated `request` to `~2.70.0`
 - Added additional filtering by `airport` parameter, in case the API ignores the parameter
