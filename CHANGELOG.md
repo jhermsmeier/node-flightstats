@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.12.0
+- Fixed credential parameters
+- Fixed error response handling
+- Updated dependencies
+
 ## 0.11.1
 - Fixed `ReferenceError: dir is not defined`
 
