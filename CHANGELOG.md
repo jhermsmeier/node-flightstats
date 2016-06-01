@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.12.1
+
+- Remove ES6 interpolated strings (@michaelkitson)
+
 ## 0.12.0
 - Fixed credential parameters
 - Fixed error response handling
