@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.13.0
+
+- Add `.getAirports( options )`
+
 ## 0.12.1
 
 - Remove ES6 interpolated strings (@michaelkitson)
