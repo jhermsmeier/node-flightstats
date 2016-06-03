@@ -1,7 +1,8 @@
 {
   "name": "flightstats",
-  "version": "0.12.1",
+  "version": "0.13.0",
   "description": "FlightStats API Client",
+  "author": "Jonas Hermsmeier <jhermsmeier@gmail.com> (https://jhermsmeier.de)",
   "license": "MIT",
   "keywords": [
     "flightstats",
@@ -14,7 +15,6 @@
     "icao"
   ],
   "main": "lib/flightstats.js",
-  "author": "Jonas Hermsmeier <jhermsmeier@gmail.com> (https://jhermsmeier.de/)",
   "dependencies": {
     "debug": "~2.2.0",
     "request": "~2.72.0"
