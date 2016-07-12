@@ -67,3 +67,136 @@ Running the tests:
 ```sh
 $ npm test
 ```
+
+# API Reference
+
+<a name="FlightStats"></a>
+
+## FlightStats
+**Kind**: global class
+
+* [FlightStats](#FlightStats)
+    * [new FlightStats(options)](#new_FlightStats_new)
+    * _instance_
+        * [.getAirlines(options, callback)](#FlightStats+getAirlines)
+        * [.getAirports(options, callback)](#FlightStats+getAirports)
+        * [.lookup(options, callback)](#FlightStats+lookup)
+        * [.status(options, callback)](#FlightStats+status) ⇒ <code>Request</code>
+        * [.schedule(options, callback)](#FlightStats+schedule) ⇒ <code>Request</code>
+    * _static_
+        * [.defaults](#FlightStats.defaults) : <code>Object</code>
+
+<a name="new_FlightStats_new"></a>
+
+### new FlightStats(options)
+FlightStats
+
+
+| Param | Type |
+| --- | --- |
+| options | <code>Object</code> |
+
+<a name="FlightStats+getAirlines"></a>
+
+### flightStats.getAirlines(options, callback)
+Retrieve a list of airlines
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+
+| Param | Type |
+| --- | --- |
+| options | <code>Object</code> |
+| callback | <code>function</code> |
+
+**Options**
+
+| Name | Type |
+| --- | --- |
+| all | <code>Boolean</code> |
+| date | <code>Date</code> |
+| iata | <code>String</code> |
+| icao | <code>String</code> |
+| fs | <code>String</code> |
+
+<a name="FlightStats+getAirports"></a>
+
+### flightStats.getAirports(options, callback)
+Retrieve a list of airports
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+
+| Param | Type |
+| --- | --- |
+| options | <code>Object</code> |
+| callback | <code>function</code> |
+
+**Options**
+
+| Name | Type |
+| --- | --- |
+| all | <code>Boolean</code> |
+| date | <code>Date</code> |
+| iata | <code>String</code> |
+| icao | <code>String</code> |
+| fs | <code>String</code> |
+| city | <code>String</code> |
+| country | <code>String</code> |
+| latitude | <code>Number</code> |
+| longitude | <code>Number</code> |
+| radius | <code>Number</code> |
+
+<a name="FlightStats+lookup"></a>
+
+### flightStats.lookup(options, callback)
+Look up a flight
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+
+| Param | Type |
+| --- | --- |
+| options | <code>Object</code> |
+| callback | <code>function</code> |
+
+**Options**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| date | <code>Date</code> |  |
+| airlineCode | <code>String</code> |  |
+| flightNumber | <code>String</code> |  |
+| airport | <code>String</code> | (optional) |
+| direction | <code>String</code> | (optional) |
+| extendedOptions | <code>Array</code> | (optional) |
+
+<a name="FlightStats+status"></a>
+
+### flightStats.status(options, callback) ⇒ <code>Request</code>
+Get the live status of a flight
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**See**: FlightStats#lookup()
+
+| Param | Type |
+| --- | --- |
+| options | <code>Object</code> |
+| callback | <code>function</code> |
+
+<a name="FlightStats+schedule"></a>
+
+### flightStats.schedule(options, callback) ⇒ <code>Request</code>
+Get a flight's schedule status information
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**See**: FlightStats#lookup()
+
+| Param | Type |
+| --- | --- |
+| options | <code>Object</code> |
+| callback | <code>function</code> |
+
+<a name="FlightStats.defaults"></a>
+
+### FlightStats.defaults : <code>Object</code>
+Default options
+
+**Kind**: static property of <code>[FlightStats](#FlightStats)</code>
