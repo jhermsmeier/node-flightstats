@@ -1,6 +1,6 @@
 {
   "name": "flightstats",
-  "version": "0.14.1",
+  "version": "0.14.2",
   "description": "FlightStats API Client",
   "author": "Jonas Hermsmeier <jhermsmeier@gmail.com> (https://jhermsmeier.de)",
   "license": "MIT",
@@ -17,12 +17,12 @@
   "main": "lib/flightstats.js",
   "dependencies": {
     "debug": "~2.2.0",
-    "request": "~2.72.0"
+    "request": "~2.73.0"
   },
   "devDependencies": {
     "dotenv": "~2.0.0",
     "mocha": "~2.5.3",
-    "nsp": "~2.4.0"
+    "nsp": "~2.6.0"
   },
   "scripts": {
     "test": "nsp check && mocha --ui tdd"
