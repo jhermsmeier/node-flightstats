@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.14.3
+
+- Favour error message supplied by FlightStats response
+- Add `.filterByAirport( flights, airport, direction )`
+
+## 0.14.2
+
+- Add API reference to `README.md`
+- Remove use of future reserved word `package`
+
+## 0.14.1
+
+- Fix TypeError on `flight.schedule`
+
+## 0.14.0
+
+- Change airport data formatting to not be exclusive
+
 ## 0.13.0
 
 - Add `.getAirports( options )`
