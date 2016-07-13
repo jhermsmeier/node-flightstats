@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.14.4
+
+- Fix ReferenceError caused by adding `.filterByAirport()`
+
 ## 0.14.3
 
 - Favour error message supplied by FlightStats response
