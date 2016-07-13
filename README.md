@@ -78,13 +78,14 @@ $ npm test
 * [FlightStats](#FlightStats)
     * [new FlightStats(options)](#new_FlightStats_new)
     * _instance_
-        * [.getAirlines(options, callback)](#FlightStats+getAirlines)
-        * [.getAirports(options, callback)](#FlightStats+getAirports)
-        * [.lookup(options, callback)](#FlightStats+lookup)
+        * [.getAirlines(options, callback)](#FlightStats+getAirlines) ⇒ <code>Request</code>
+        * [.getAirports(options, callback)](#FlightStats+getAirports) ⇒ <code>Request</code>
+        * [.lookup(options, callback)](#FlightStats+lookup) ⇒ <code>Request</code>
         * [.status(options, callback)](#FlightStats+status) ⇒ <code>Request</code>
         * [.schedule(options, callback)](#FlightStats+schedule) ⇒ <code>Request</code>
     * _static_
         * [.defaults](#FlightStats.defaults) : <code>Object</code>
+        * [.filterByAirport(flights, airport, direction)](#FlightStats.filterByAirport) ⇒ <code>Array</code>
 
 <a name="new_FlightStats_new"></a>
 
@@ -98,7 +99,7 @@ FlightStats
 
 <a name="FlightStats+getAirlines"></a>
 
-### flightStats.getAirlines(options, callback)
+### flightStats.getAirlines(options, callback) ⇒ <code>Request</code>
 Retrieve a list of airlines
 
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
@@ -108,7 +109,7 @@ Retrieve a list of airlines
 | options | <code>Object</code> |
 | callback | <code>function</code> |
 
-**Options**
+**Properties**
 
 | Name | Type |
 | --- | --- |
@@ -120,7 +121,7 @@ Retrieve a list of airlines
 
 <a name="FlightStats+getAirports"></a>
 
-### flightStats.getAirports(options, callback)
+### flightStats.getAirports(options, callback) ⇒ <code>Request</code>
 Retrieve a list of airports
 
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
@@ -130,7 +131,7 @@ Retrieve a list of airports
 | options | <code>Object</code> |
 | callback | <code>function</code> |
 
-**Options**
+**Properties**
 
 | Name | Type |
 | --- | --- |
@@ -147,7 +148,7 @@ Retrieve a list of airports
 
 <a name="FlightStats+lookup"></a>
 
-### flightStats.lookup(options, callback)
+### flightStats.lookup(options, callback) ⇒ <code>Request</code>
 Look up a flight
 
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
@@ -157,7 +158,7 @@ Look up a flight
 | options | <code>Object</code> |
 | callback | <code>function</code> |
 
-**Options**
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -200,3 +201,16 @@ Get a flight's schedule status information
 Default options
 
 **Kind**: static property of <code>[FlightStats](#FlightStats)</code>
+<a name="FlightStats.filterByAirport"></a>
+
+### FlightStats.filterByAirport(flights, airport, direction) ⇒ <code>Array</code>
+Filter an array of flights by airport & direction
+
+**Kind**: static method of <code>[FlightStats](#FlightStats)</code>
+**Returns**: <code>Array</code> - flights
+
+| Param | Type |
+| --- | --- |
+| flights | <code>Array</code> |
+| airport | <code>String</code> |
+| direction | <code>String</code> |
