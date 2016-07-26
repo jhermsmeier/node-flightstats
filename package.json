@@ -17,7 +17,6 @@
   "main": "lib/flightstats.js",
   "dependencies": {
     "debug": "~2.2.0",
-    "flight-designator": "~3.0.0",
     "request": "~2.74.0"
   },
   "devDependencies": {
