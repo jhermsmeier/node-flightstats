@@ -25,7 +25,7 @@
     "nsp": "~2.6.1"
   },
   "scripts": {
-    "test": "nsp check && mocha --ui tdd"
+    "test": "nsp check && mocha --ui tdd -r dotenv/config"
   },
   "homepage": "https://github.com/jhermsmeier/node-flightstats",
   "repository": {
