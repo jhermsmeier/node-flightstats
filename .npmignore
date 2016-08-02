@@ -1,2 +1,5 @@
 .*
+*.log
 test
+CHANGELOG.md
+CODES.md
