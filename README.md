@@ -70,8 +70,6 @@ $ npm test
 
 # API Reference
 
-<a name="FlightStats"></a>
-
 ## FlightStats
 **Kind**: global class
 
@@ -87,15 +85,20 @@ $ npm test
         * [.defaults](#FlightStats.defaults) : <code>Object</code>
         * [.filterByAirport(flights, airport, direction)](#FlightStats.filterByAirport) ⇒ <code>Array</code>
 
+
+-
+
 <a name="new_FlightStats_new"></a>
 
 ### new FlightStats(options)
 FlightStats
 
+**Params**
 
-| Param | Type |
-| --- | --- |
-| options | <code>Object</code> |
+- options <code>Object</code>
+
+
+-
 
 <a name="FlightStats+getAirlines"></a>
 
@@ -103,11 +106,10 @@ FlightStats
 Retrieve a list of airlines
 
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**Params**
 
-| Param | Type |
-| --- | --- |
-| options | <code>Object</code> |
-| callback | <code>function</code> |
+- options <code>Object</code>
+- callback <code>function</code>
 
 **Properties**
 
@@ -119,17 +121,19 @@ Retrieve a list of airlines
 | icao | <code>String</code> |
 | fs | <code>String</code> |
 
+
+-
+
 <a name="FlightStats+getAirports"></a>
 
 ### flightStats.getAirports(options, callback) ⇒ <code>Request</code>
 Retrieve a list of airports
 
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**Params**
 
-| Param | Type |
-| --- | --- |
-| options | <code>Object</code> |
-| callback | <code>function</code> |
+- options <code>Object</code>
+- callback <code>function</code>
 
 **Properties**
 
@@ -146,17 +150,19 @@ Retrieve a list of airports
 | longitude | <code>Number</code> |
 | radius | <code>Number</code> |
 
+
+-
+
 <a name="FlightStats+lookup"></a>
 
 ### flightStats.lookup(options, callback) ⇒ <code>Request</code>
 Look up a flight
 
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**Params**
 
-| Param | Type |
-| --- | --- |
-| options | <code>Object</code> |
-| callback | <code>function</code> |
+- options <code>Object</code>
+- callback <code>function</code>
 
 **Properties**
 
@@ -169,6 +175,9 @@ Look up a flight
 | direction | <code>String</code> | (optional) |
 | extendedOptions | <code>Array</code> | (optional) |
 
+
+-
+
 <a name="FlightStats+status"></a>
 
 ### flightStats.status(options, callback) ⇒ <code>Request</code>
@@ -176,11 +185,13 @@ Get the live status of a flight
 
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
 **See**: FlightStats#lookup()
+**Params**
 
-| Param | Type |
-| --- | --- |
-| options | <code>Object</code> |
-| callback | <code>function</code> |
+- options <code>Object</code>
+- callback <code>function</code>
+
+
+-
 
 <a name="FlightStats+schedule"></a>
 
@@ -189,11 +200,13 @@ Get a flight's schedule status information
 
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
 **See**: FlightStats#lookup()
+**Params**
 
-| Param | Type |
-| --- | --- |
-| options | <code>Object</code> |
-| callback | <code>function</code> |
+- options <code>Object</code>
+- callback <code>function</code>
+
+
+-
 
 <a name="FlightStats.defaults"></a>
 
@@ -201,6 +214,9 @@ Get a flight's schedule status information
 Default options
 
 **Kind**: static property of <code>[FlightStats](#FlightStats)</code>
+
+-
+
 <a name="FlightStats.filterByAirport"></a>
 
 ### FlightStats.filterByAirport(flights, airport, direction) ⇒ <code>Array</code>
@@ -208,9 +224,26 @@ Filter an array of flights by airport & direction
 
 **Kind**: static method of <code>[FlightStats](#FlightStats)</code>
 **Returns**: <code>Array</code> - flights
+**Params**
 
-| Param | Type |
-| --- | --- |
-| flights | <code>Array</code> |
-| airport | <code>String</code> |
-| direction | <code>String</code> |
+- flights <code>Array</code>
+- airport <code>String</code>
+- direction <code>String</code>
+
+
+-
+
+<a name="getUTCTime"></a>
+
+## getUTCTime(dateString, utcOffset) ⇒ <code>Date</code>
+Generates a proper Date from a
+date string and UTC TZ offset
+
+**Kind**: global function
+**Params**
+
+- dateString <code>String</code>
+- utcOffset <code>Number</code>
+
+
+-
