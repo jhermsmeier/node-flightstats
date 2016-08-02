@@ -1,5 +1,6 @@
 var FlightStats = require( '..' )
 
+global.assert = require( 'assert' )
 global.client = null
 global.scope = null
 
