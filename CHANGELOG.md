@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.15.0
+
+- Improve request handling (gzip, json, http agent)
+- Remove `FlightStats.userAgent` (duplicate of `FlightStats.defaults.userAgent`)
+- Move `FlightStats.baseUrl` to `FlightStats.defaults.baseUrl`
+- Remove `nsp check`, update `mocha`
+- Update test setup: Prerequire `dotenv/config`
+
+## 0.14.6
+
+- Remove unused `flight-designator`
+
+## 0.14.5
+
+- Update dependencies
+
 ## 0.14.4
 
 - Fix ReferenceError caused by adding `.filterByAirport()`
