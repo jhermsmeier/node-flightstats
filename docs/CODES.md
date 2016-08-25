@@ -1,4 +1,11 @@
 # Codes
+<!-- MarkdownTOC -->
+
+- [Airline Categories](#airline-categories)
+- [Flight Status](#flight-status)
+- [Service Type](#service-type)
+
+<!-- /MarkdownTOC -->
 
 ## Airline Categories
 
