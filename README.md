@@ -4,13 +4,23 @@
 [![npm downloads](https://img.shields.io/npm/dm/flightstats.svg?style=flat-square)](https://npmjs.com/flightstats)
 [![build status](https://img.shields.io/travis/jhermsmeier/node-flightstats.svg?style=flat-square)](https://travis-ci.org/jhermsmeier/node-flightstats)
 
-## Install via [npm](https://npmjs.com)
+# Install via [npm](https://npmjs.com)
 
 ```sh
 $ npm install flightstats
 ```
 
-## Usage
+# Index
+<!-- MarkdownTOC depth=2 -->
+
+- [Usage](#usage)
+  - [Testing](#testing)
+- [API Reference](#api-reference)
+  - [FlightStats](#flightstats)
+
+<!-- /MarkdownTOC -->
+
+# Usage
 
 ```js
 var FlightStatsAPI = require( 'flightstats' )
@@ -81,6 +91,16 @@ $ npm test
         * [.lookup(options, callback)](#FlightStats+lookup) ⇒ <code>Request</code>
         * [.status(options, callback)](#FlightStats+status) ⇒ <code>Request</code>
         * [.schedule(options, callback)](#FlightStats+schedule) ⇒ <code>Request</code>
+        * [.firstFlightIn(options, callback)](#FlightStats+firstFlightIn) ⇒ <code>Request</code>
+        * [.firstFlightOut(options, callback)](#FlightStats+firstFlightOut) ⇒ <code>Request</code>
+        * [.lastFlightIn(options, callback)](#FlightStats+lastFlightIn) ⇒ <code>Request</code>
+        * [.lastFlightOut(options, callback)](#FlightStats+lastFlightOut) ⇒ <code>Request</code>
+        * [.connections(options, callback)](#FlightStats+connections) ⇒ <code>Request</code>
+        * [.flightRatings(options, callback)](#FlightStats+flightRatings) ⇒ <code>Request</code>
+        * [.routeRatings(options, callback)](#FlightStats+routeRatings) ⇒ <code>Request</code>
+        * [.flightsNear(options, callback)](#FlightStats+flightsNear) ⇒ <code>Request</code>
+        * [.flightsWithin(options, callback)](#FlightStats+flightsWithin) ⇒ <code>Request</code>
+        * [.routes(options, callback)](#FlightStats+routes) ⇒ <code>Request</code>
     * _static_
         * [.defaults](#FlightStats.defaults) : <code>Object</code>
         * [.filterByAirport(flights, airport, direction)](#FlightStats.filterByAirport) ⇒ <code>Array</code>
@@ -208,6 +228,147 @@ Get a flight's schedule status information
 
 -
 
+<a name="FlightStats+firstFlightIn"></a>
+
+### flightStats.firstFlightIn(options, callback) ⇒ <code>Request</code>
+Get the first inbound flight between two airports
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**Params**
+
+- options <code>Object</code>
+- callback <code>function</code>
+
+
+-
+
+<a name="FlightStats+firstFlightOut"></a>
+
+### flightStats.firstFlightOut(options, callback) ⇒ <code>Request</code>
+Get the first outbound flight between two airports
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**Params**
+
+- options <code>Object</code>
+- callback <code>function</code>
+
+
+-
+
+<a name="FlightStats+lastFlightIn"></a>
+
+### flightStats.lastFlightIn(options, callback) ⇒ <code>Request</code>
+Get the last inbound flight between two airports
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**Params**
+
+- options <code>Object</code>
+- callback <code>function</code>
+
+
+-
+
+<a name="FlightStats+lastFlightOut"></a>
+
+### flightStats.lastFlightOut(options, callback) ⇒ <code>Request</code>
+Get the last outbound flight between two airports
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**Params**
+
+- options <code>Object</code>
+- callback <code>function</code>
+
+
+-
+
+<a name="FlightStats+connections"></a>
+
+### flightStats.connections(options, callback) ⇒ <code>Request</code>
+Get connecting flights between two airports
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**Internal**: used by {first,last}Flight{In,Out} methods
+**Params**
+
+- options <code>Object</code>
+- callback <code>function</code>
+
+
+-
+
+<a name="FlightStats+flightRatings"></a>
+
+### flightStats.flightRatings(options, callback) ⇒ <code>Request</code>
+Get ratings for a specified flight
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**Params**
+
+- options <code>Object</code>
+- callback <code>function</code>
+
+
+-
+
+<a name="FlightStats+routeRatings"></a>
+
+### flightStats.routeRatings(options, callback) ⇒ <code>Request</code>
+Get ratings for a route between airports
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**Params**
+
+- options <code>Object</code>
+- callback <code>function</code>
+
+
+-
+
+<a name="FlightStats+flightsNear"></a>
+
+### flightStats.flightsNear(options, callback) ⇒ <code>Request</code>
+Get flights near a given (lat,lng) coordinate, within a radius
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**Params**
+
+- options <code>Object</code>
+- callback <code>function</code>
+
+
+-
+
+<a name="FlightStats+flightsWithin"></a>
+
+### flightStats.flightsWithin(options, callback) ⇒ <code>Request</code>
+Get flights within a given bounding box (lat,lng,lat,lng)
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**Params**
+
+- options <code>Object</code>
+- callback <code>function</code>
+
+
+-
+
+<a name="FlightStats+routes"></a>
+
+### flightStats.routes(options, callback) ⇒ <code>Request</code>
+Get routes between two airports
+
+**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
+**Params**
+
+- options <code>Object</code>
+- callback <code>function</code>
+
+
+-
+
 <a name="FlightStats.defaults"></a>
 
 ### FlightStats.defaults : <code>Object</code>
@@ -229,21 +390,3 @@ Filter an array of flights by airport & direction
 - flights <code>Array</code>
 - airport <code>String</code>
 - direction <code>String</code>
-
-
--
-
-<a name="getUTCTime"></a>
-
-## getUTCTime(dateString, utcOffset) ⇒ <code>Date</code>
-Generates a proper Date from a
-date string and UTC TZ offset
-
-**Kind**: global function
-**Params**
-
-- dateString <code>String</code>
-- utcOffset <code>Number</code>
-
-
--
