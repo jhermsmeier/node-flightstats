@@ -7,7 +7,7 @@
 # Install via [npm](https://npmjs.com)
 
 ```sh
-$ npm install flightstats
+$ npm install --save flightstats
 ```
 
 # Index
