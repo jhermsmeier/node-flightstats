@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.16.0
+
+- Add `.routes()`
+- Add `.flightsWithin()`
+- Add `.flightsNear()`
+- Add `.routeRatings()`
+- Add `.flightRatings()`
+- Add connections endpoint
+  - `.firstFlightIn()`
+  - `.firstFlightOut()`
+  - `.lastFlightIn()`
+  - `.lastFlightOut()`
+
 ## 0.15.0
 
 - Improve request handling (gzip, json, http agent)
