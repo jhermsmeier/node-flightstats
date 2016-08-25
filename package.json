@@ -36,6 +36,6 @@
   },
   "scripts": {
     "test": "mocha --require dotenv/config --ui tdd",
-    "docs": "jsdoc2md 'lib/**/*.js' --separators --global-index-format grouped --param-list-format list > API.md"
+    "docs": "jsdoc2md 'lib/**/*.js' --separators --param-list-format list > API.md"
   }
 }

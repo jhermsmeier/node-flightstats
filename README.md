@@ -4,19 +4,20 @@
 [![npm downloads](https://img.shields.io/npm/dm/flightstats.svg?style=flat-square)](https://npmjs.com/flightstats)
 [![build status](https://img.shields.io/travis/jhermsmeier/node-flightstats.svg?style=flat-square)](https://travis-ci.org/jhermsmeier/node-flightstats)
 
-# Install via [npm](https://npmjs.com)
+## Install via [npm](https://npmjs.com)
 
 ```sh
 $ npm install --save flightstats
 ```
 
-# Index
+## Index
 <!-- MarkdownTOC depth=2 -->
 
 - [Usage](#usage)
   - [Testing](#testing)
 - [API Reference](#api-reference)
   - [FlightStats](#flightstats)
+  - [getUTCTime\(dateString, utcOffset\) ⇒ Date](#getutctimedatestring-utcoffset-⇒-date)
 
 <!-- /MarkdownTOC -->
 
@@ -104,6 +105,12 @@ $ npm test
     * _static_
         * [.defaults](#FlightStats.defaults) : <code>Object</code>
         * [.filterByAirport(flights, airport, direction)](#FlightStats.filterByAirport) ⇒ <code>Array</code>
+    * _inner_
+        * [~ConstructorOptions](#FlightStats..ConstructorOptions) : <code>Object</code>
+        * [~AirlineOptions](#FlightStats..AirlineOptions) : <code>Object</code>
+        * [~AirportOptions](#FlightStats..AirportOptions) : <code>Object</code>
+        * [~LookupOptions](#FlightStats..LookupOptions) : <code>Object</code>
+        * [~ConnectionOptions](#FlightStats..ConnectionOptions) : <code>Object</code>
 
 
 -
@@ -115,7 +122,7 @@ FlightStats
 
 **Params**
 
-- options <code>Object</code>
+- options <code>[ConstructorOptions](#FlightStats..ConstructorOptions)</code>
 
 
 -
@@ -128,18 +135,8 @@ Retrieve a list of airlines
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
 **Params**
 
-- options <code>Object</code>
+- options <code>[AirlineOptions](#FlightStats..AirlineOptions)</code>
 - callback <code>function</code>
-
-**Properties**
-
-| Name | Type |
-| --- | --- |
-| all | <code>Boolean</code> |
-| date | <code>Date</code> |
-| iata | <code>String</code> |
-| icao | <code>String</code> |
-| fs | <code>String</code> |
 
 
 -
@@ -152,23 +149,8 @@ Retrieve a list of airports
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
 **Params**
 
-- options <code>Object</code>
+- options <code>[AirportOptions](#FlightStats..AirportOptions)</code>
 - callback <code>function</code>
-
-**Properties**
-
-| Name | Type |
-| --- | --- |
-| all | <code>Boolean</code> |
-| date | <code>Date</code> |
-| iata | <code>String</code> |
-| icao | <code>String</code> |
-| fs | <code>String</code> |
-| city | <code>String</code> |
-| country | <code>String</code> |
-| latitude | <code>Number</code> |
-| longitude | <code>Number</code> |
-| radius | <code>Number</code> |
 
 
 -
@@ -181,19 +163,8 @@ Look up a flight
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
 **Params**
 
-- options <code>Object</code>
+- options <code>[LookupOptions](#FlightStats..LookupOptions)</code>
 - callback <code>function</code>
-
-**Properties**
-
-| Name | Type | Description |
-| --- | --- | --- |
-| date | <code>Date</code> |  |
-| airlineCode | <code>String</code> |  |
-| flightNumber | <code>String</code> |  |
-| airport | <code>String</code> | (optional) |
-| direction | <code>String</code> | (optional) |
-| extendedOptions | <code>Array</code> | (optional) |
 
 
 -
@@ -204,10 +175,9 @@ Look up a flight
 Get the live status of a flight
 
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
-**See**: FlightStats#lookup()
 **Params**
 
-- options <code>Object</code>
+- options <code>[LookupOptions](#FlightStats..LookupOptions)</code>
 - callback <code>function</code>
 
 
@@ -219,10 +189,9 @@ Get the live status of a flight
 Get a flight's schedule status information
 
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
-**See**: FlightStats#lookup()
 **Params**
 
-- options <code>Object</code>
+- options <code>[LookupOptions](#FlightStats..LookupOptions)</code>
 - callback <code>function</code>
 
 
@@ -236,7 +205,7 @@ Get the first inbound flight between two airports
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
 **Params**
 
-- options <code>Object</code>
+- options <code>[ConnectionOptions](#FlightStats..ConnectionOptions)</code>
 - callback <code>function</code>
 
 
@@ -250,7 +219,7 @@ Get the first outbound flight between two airports
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
 **Params**
 
-- options <code>Object</code>
+- options <code>[ConnectionOptions](#FlightStats..ConnectionOptions)</code>
 - callback <code>function</code>
 
 
@@ -264,7 +233,7 @@ Get the last inbound flight between two airports
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
 **Params**
 
-- options <code>Object</code>
+- options <code>[ConnectionOptions](#FlightStats..ConnectionOptions)</code>
 - callback <code>function</code>
 
 
@@ -278,7 +247,7 @@ Get the last outbound flight between two airports
 **Kind**: instance method of <code>[FlightStats](#FlightStats)</code>
 **Params**
 
-- options <code>Object</code>
+- options <code>[ConnectionOptions](#FlightStats..ConnectionOptions)</code>
 - callback <code>function</code>
 
 
@@ -293,7 +262,7 @@ Get connecting flights between two airports
 **Internal**: used by {first,last}Flight{In,Out} methods
 **Params**
 
-- options <code>Object</code>
+- options <code>[ConnectionOptions](#FlightStats..ConnectionOptions)</code>
 - callback <code>function</code>
 
 
@@ -390,3 +359,133 @@ Filter an array of flights by airport & direction
 - flights <code>Array</code>
 - airport <code>String</code>
 - direction <code>String</code>
+
+
+-
+
+<a name="FlightStats..ConstructorOptions"></a>
+
+### FlightStats~ConstructorOptions : <code>Object</code>
+Available options for [FlightStats](#FlightStats)
+
+**Kind**: inner typedef of <code>[FlightStats](#FlightStats)</code>
+**Properties**
+
+| Name | Type |
+| --- | --- |
+| baseUrl | <code>String</code> |
+| userAgent | <code>String</code> |
+| appId | <code>String</code> |
+| appKey | <code>String</code> |
+
+
+-
+
+<a name="FlightStats..AirlineOptions"></a>
+
+### FlightStats~AirlineOptions : <code>Object</code>
+Available options for [.getAirlines()](#FlightStats+getAirlines)
+
+**Kind**: inner typedef of <code>[FlightStats](#FlightStats)</code>
+**Properties**
+
+| Name | Type | Default |
+| --- | --- | --- |
+| all | <code>Boolean</code> | <code>false</code> |
+| date | <code>Date</code> |  |
+| iata | <code>String</code> |  |
+| icao | <code>String</code> |  |
+| fs | <code>String</code> |  |
+
+
+-
+
+<a name="FlightStats..AirportOptions"></a>
+
+### FlightStats~AirportOptions : <code>Object</code>
+Available options for [.getAirports()](#FlightStats+getAirports)
+
+**Kind**: inner typedef of <code>[FlightStats](#FlightStats)</code>
+**Properties**
+
+| Name | Type | Default |
+| --- | --- | --- |
+| all | <code>Boolean</code> | <code>false</code> |
+| date | <code>Date</code> |  |
+| iata | <code>String</code> |  |
+| icao | <code>String</code> |  |
+| fs | <code>String</code> |  |
+| city | <code>String</code> |  |
+| country | <code>String</code> |  |
+| latitude | <code>Number</code> |  |
+| longitude | <code>Number</code> |  |
+| radius | <code>Number</code> |  |
+
+
+-
+
+<a name="FlightStats..LookupOptions"></a>
+
+### FlightStats~LookupOptions : <code>Object</code>
+Available options for [.lookup()](#FlightStats+lookup),
+[.schedule()](#FlightStats+schedule) and [.status()](#FlightStats+status)
+
+**Kind**: inner typedef of <code>[FlightStats](#FlightStats)</code>
+**Properties**
+
+| Name | Type | Default |
+| --- | --- | --- |
+| date | <code>Date</code> |  |
+| airlineCode | <code>String</code> |  |
+| flightNumber | <code>String</code> |  |
+| airport | <code>String</code> |  |
+| direction | <code>String</code> | <code>&#x27;arr&#x27;</code> |
+| extendedOptions | <code>Array.&lt;String&gt;</code> |  |
+
+
+-
+
+<a name="FlightStats..ConnectionOptions"></a>
+
+### FlightStats~ConnectionOptions : <code>Object</code>
+Available options for [.firstFlightIn()](#FlightStats+firstFlightIn),
+[.firstFlightOut()](#FlightStats+firstFlightOut),
+[.lastFlightIn()](#FlightStats+lastFlightIn),
+[.lastFlightOut()](#FlightStats+lastFlightOut)
+
+**Kind**: inner typedef of <code>[FlightStats](#FlightStats)</code>
+**Properties**
+
+| Name | Type | Default |
+| --- | --- | --- |
+| type | <code>String</code> |  |
+| departureAirport | <code>String</code> |  |
+| arrivalAirport | <code>String</code> |  |
+| date | <code>Date</code> |  |
+| numHours | <code>Number</code> | <code>6</code> |
+| maxResults | <code>Number</code> | <code>25</code> |
+| maxConnections | <code>Number</code> | <code>2</code> |
+| minimumConnectTime | <code>Number</code> |  |
+| payloadType | <code>String</code> | <code>&#x27;passenger&#x27;</code> |
+| includeAirlines | <code>Array.&lt;String&gt;</code> |  |
+| excludeAirlines | <code>Array.&lt;String&gt;</code> |  |
+| includeAirports | <code>Array.&lt;String&gt;</code> |  |
+| excludeAirports | <code>Array.&lt;String&gt;</code> |  |
+| includeSurface | <code>Boolean</code> | <code>false</code> |
+| includeCodeshares | <code>Boolean</code> | <code>true</code> |
+| includeMultipleCarriers | <code>Boolean</code> | <code>true</code> |
+
+
+-
+
+<a name="getUTCTime"></a>
+
+## getUTCTime(dateString, utcOffset) ⇒ <code>Date</code>
+Generates a proper Date from a
+date string and UTC TZ offset
+
+**Kind**: global function
+**Params**
+
+- dateString <code>String</code>
+- utcOffset <code>Number</code>
