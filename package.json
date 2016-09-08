@@ -38,6 +38,8 @@
   },
   "scripts": {
     "test": "mocha --require dotenv/config --ui tdd",
+    "test:clean": "rm -rf test/fixtures/*",
+    "test:record": "HTTP_RECORD=true mocha --require dotenv/config --ui tdd",
     "docs": "jsdoc2md 'lib/**/*.js' --separators --param-list-format list > docs/API.md"
   }
 }

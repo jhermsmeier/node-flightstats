@@ -1,0 +1,32 @@
+[
+  {
+    "scope": "https://api.flightstats.com:443",
+    "method": "GET",
+    "path": "/flex/airlines/rest/v1/json/iata/LH?appId=xxxxxxxxxx&appKey=xxxxxxxxxxxxxxxxxxxxxxxxx&extendedOptions=includeNewFields",
+    "body": "",
+    "status": 200,
+    "response": {
+      "airlines": [
+        {
+          "fs": "LH",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa",
+          "phoneNumber": "800 645-3880",
+          "active": true,
+          "category": "I"
+        }
+      ]
+    },
+    "headers": {
+      "date": "Thu, 08 Sep 2016 15:16:38 GMT",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "128"
+    },
+    "reqheaders": {
+      "host": "api.flightstats.com",
+      "accept-encoding": "gzip, deflate",
+      "accept": "application/json"
+    }
+  }
+]

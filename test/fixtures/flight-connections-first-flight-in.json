@@ -1,0 +1,26 @@
+[
+  {
+    "scope": "https://api.flightstats.com:443",
+    "method": "GET",
+    "path": "/flex/connections/rest/v2/json/firstflightin/TXL/to/MUC/arriving_before/2016/8/25/17/0?appId=xxxxxxxxxx&appKey=xxxxxxxxxxxxxxxxxxxxxxxxx&numHours=6&maxResults=25&maxConnections=2&payloadType=passenger&includeAirlines%5B0%5D=LH&includeSurface=false&includeCodeshares=true&includeMultipleCarriers=true",
+    "body": "",
+    "status": 200,
+    "response": {
+      "error": {
+        "httpStatusCode": 403,
+        "errorId": "53e0145d-711f-46b2-8469-7d68d8f5ac88",
+        "errorMessage": "usage limits are exceeded"
+      }
+    },
+    "headers": {
+      "date": "Thu, 08 Sep 2016 15:15:25 GMT",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "124"
+    },
+    "reqheaders": {
+      "host": "api.flightstats.com",
+      "accept-encoding": "gzip, deflate",
+      "accept": "application/json"
+    }
+  }
+]

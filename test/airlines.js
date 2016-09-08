@@ -1,3 +1,5 @@
+var assert = require( 'assert' )
+
 suite( 'Airlines', function() {
 
   test( 'All airlines (active and inactive)', function( done ) {
