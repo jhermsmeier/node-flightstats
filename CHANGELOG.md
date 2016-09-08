@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.17.0
+
+- Implement HTTP request mocking in tests
+- Remove use of `useHttpErrors` for better error messages
+- Keep `delayIndexUrl`, `weatherUrl` for flights / airports
+
 ## 0.16.0
 
 - Add `.routes()`
