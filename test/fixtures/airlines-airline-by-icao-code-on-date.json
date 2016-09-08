@@ -1,0 +1,30 @@
+[
+  {
+    "scope": "https://api.flightstats.com:443",
+    "method": "GET",
+    "path": "/flex/airlines/rest/v1/json/icao/EZY/2016/9/8?appId=xxxxxxxxxx&appKey=xxxxxxxxxxxxxxxxxxxxxxxxx&extendedOptions=includeNewFields",
+    "body": "",
+    "status": 200,
+    "response": {
+      "airline": {
+        "fs": "U2",
+        "iata": "U2",
+        "icao": "EZY",
+        "name": "easyJet",
+        "phoneNumber": "+08 71 244 2366",
+        "active": true,
+        "category": "A"
+      }
+    },
+    "headers": {
+      "date": "Thu, 08 Sep 2016 15:16:39 GMT",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "126"
+    },
+    "reqheaders": {
+      "host": "api.flightstats.com",
+      "accept-encoding": "gzip, deflate",
+      "accept": "application/json"
+    }
+  }
+]

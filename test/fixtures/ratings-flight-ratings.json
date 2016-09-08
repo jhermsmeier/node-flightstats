@@ -1,0 +1,115 @@
+[
+  {
+    "scope": "https://api.flightstats.com:443",
+    "method": "GET",
+    "path": "/flex/ratings/rest/v1/json/flight/LH/2054?appId=xxxxxxxxxx&appKey=xxxxxxxxxxxxxxxxxxxxxxxxx",
+    "body": "",
+    "status": 200,
+    "response": {
+      "request": {
+        "airlineCode": {
+          "requestedCode": "LH",
+          "fsCode": "LH"
+        },
+        "flightNumber": {
+          "requested": "2054",
+          "interpreted": "2054"
+        },
+        "departureAirport": {},
+        "codeType": {},
+        "url": "https://api.flightstats.com/flex/ratings/rest/v1/json/flight/LH/2054"
+      },
+      "ratings": [
+        {
+          "departureAirportFsCode": "MUC",
+          "arrivalAirportFsCode": "TXL",
+          "airlineFsCode": "LH",
+          "flightNumber": "2054",
+          "codeshares": 0,
+          "directs": 0,
+          "observations": 62,
+          "ontime": 58,
+          "late15": 3,
+          "late30": 1,
+          "late45": 0,
+          "cancelled": 0,
+          "diverted": 0,
+          "ontimePercent": 0.93548387,
+          "delayObservations": 32,
+          "delayMean": 6,
+          "delayStandardDeviation": 7.5337949,
+          "delayMin": 0,
+          "delayMax": 36,
+          "allOntimeCumulative": 1,
+          "allOntimeStars": 5,
+          "allDelayCumulative": 1,
+          "allDelayStars": 5,
+          "allStars": 5
+        }
+      ],
+      "appendix": {
+        "airlines": [
+          {
+            "fs": "LH",
+            "iata": "LH",
+            "icao": "DLH",
+            "name": "Lufthansa",
+            "phoneNumber": "800 645-3880",
+            "active": true
+          }
+        ],
+        "airports": [
+          {
+            "fs": "TXL",
+            "iata": "TXL",
+            "icao": "EDDT",
+            "name": "Tegel Airport",
+            "city": "Berlin",
+            "cityCode": "BER",
+            "countryCode": "DE",
+            "countryName": "Germany",
+            "regionName": "Europe",
+            "timeZoneRegionName": "Europe/Berlin",
+            "localTime": "2016-09-08T17:16:40.122",
+            "utcOffsetHours": 2,
+            "latitude": 52.553944,
+            "longitude": 13.291722,
+            "elevationFeet": 121,
+            "classification": 1,
+            "active": true
+          },
+          {
+            "fs": "MUC",
+            "iata": "MUC",
+            "icao": "EDDM",
+            "name": "Franz Josef Strauss Airport",
+            "city": "Munich",
+            "cityCode": "MUC",
+            "countryCode": "DE",
+            "countryName": "Germany",
+            "regionName": "Europe",
+            "timeZoneRegionName": "Europe/Berlin",
+            "localTime": "2016-09-08T17:16:40.122",
+            "utcOffsetHours": 2,
+            "latitude": 48.353005,
+            "longitude": 11.790143,
+            "elevationFeet": 1486,
+            "classification": 1,
+            "active": true
+          }
+        ]
+      }
+    },
+    "headers": {
+      "server": "Apache-Coyote/1.1",
+      "content-type": "application/json;charset=UTF-8",
+      "content-length": "1562",
+      "date": "Thu, 08 Sep 2016 15:16:39 GMT"
+    },
+    "reqheaders": {
+      "host": "api.flightstats.com",
+      "accept-encoding": "gzip, deflate",
+      "accept": "application/json"
+    }
+  }
+]

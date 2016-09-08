@@ -5,4 +5,6 @@ branches:
   only:
     - master
 sudo: false
-script: npm test
+script:
+  - touch .env
+  - npm test
