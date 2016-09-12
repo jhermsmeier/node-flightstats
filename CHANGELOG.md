@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.17.1
+
+- Fix use of dynamic Date in tests
+- Fix `extendedOptions` being joined in `.schedule()`
+
 ## 0.17.0
 
 - Implement HTTP request mocking in tests
