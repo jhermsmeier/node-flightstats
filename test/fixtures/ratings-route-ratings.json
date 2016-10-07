@@ -2375,7 +2375,7 @@
             "countryName": "Germany",
             "regionName": "Europe",
             "timeZoneRegionName": "Europe/Berlin",
-            "localTime": "2016-09-08T17:16:40.232",
+            "localTime": "2016-09-12T14:38:45.221",
             "utcOffsetHours": 2,
             "latitude": 52.553944,
             "longitude": 13.291722,
@@ -2394,7 +2394,7 @@
             "countryName": "Germany",
             "regionName": "Europe",
             "timeZoneRegionName": "Europe/Berlin",
-            "localTime": "2016-09-08T17:16:40.232",
+            "localTime": "2016-09-12T14:38:45.221",
             "utcOffsetHours": 2,
             "latitude": 48.353005,
             "longitude": 11.790143,
@@ -2409,7 +2409,7 @@
       "server": "Apache-Coyote/1.1",
       "content-type": "application/json;charset=UTF-8",
       "transfer-encoding": "chunked",
-      "date": "Thu, 08 Sep 2016 15:16:39 GMT"
+      "date": "Mon, 12 Sep 2016 12:38:44 GMT"
     },
     "reqheaders": {
       "host": "api.flightstats.com",
