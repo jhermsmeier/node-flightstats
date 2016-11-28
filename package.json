@@ -17,6 +17,7 @@
   "main": "lib/flightstats.js",
   "dependencies": {
     "debug": "~2.3.3",
+    "moment-timezone": "~0.5.10",
     "request": "~2.79.0"
   },
   "devDependencies": {
