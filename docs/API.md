@@ -22,7 +22,20 @@
         * [.flightsWithin(options, callback)](#FlightStats+flightsWithin) ⇒ <code>Request</code>
         * [.routes(options, callback)](#FlightStats+routes) ⇒ <code>Request</code>
     * _static_
+        * [.Alerts](#FlightStats.Alerts)
+            * [new Alerts(client)](#new_FlightStats.Alerts_new)
+            * [.list(maxId, callback()](#FlightStats.Alerts+list) ⇒ <code>Request</code>
+            * [.get(id, callback()](#FlightStats.Alerts+get) ⇒ <code>Request</code>
+            * [.remove(id, callback()](#FlightStats.Alerts+remove) ⇒ <code>Request</code>
+            * [.simulate(options, callback()](#FlightStats.Alerts+simulate) ⇒ <code>Request</code>
+            * [.create(options, callback()](#FlightStats.Alerts+create) ⇒ <code>Request</code>
+        * [.AirlineCategory](#FlightStats.AirlineCategory) : <code>Object.&lt;String, Object&gt;</code>
+        * [.CodeshareType](#FlightStats.CodeshareType) : <code>Object.&lt;String, Object&gt;</code>
+        * [.FlightStatus](#FlightStats.FlightStatus) : <code>Object.&lt;String, String&gt;</code>
         * [.defaults](#FlightStats.defaults) : <code>Object</code>
+        * [.IrregularOperation](#FlightStats.IrregularOperation) : <code>Object.&lt;String, String&gt;</code>
+        * [.ServiceType](#FlightStats.ServiceType) : <code>Object.&lt;String, Object&gt;</code>
+        * [.ServiceType](#FlightStats.ServiceType) : <code>Object.&lt;String, Object&gt;</code>
         * [.filterByAirport(flights, airport, [direction])](#FlightStats.filterByAirport) ⇒ <code>Array.&lt;Flight&gt;</code>
 
 
@@ -314,10 +327,184 @@ Get routes between two airports
 
 -
 
+<a name="FlightStats.Alerts"></a>
+
+### FlightStats.Alerts
+**Kind**: static class of <code>[FlightStats](#FlightStats)</code>  
+
+* [.Alerts](#FlightStats.Alerts)
+    * [new Alerts(client)](#new_FlightStats.Alerts_new)
+    * [.list(maxId, callback()](#FlightStats.Alerts+list) ⇒ <code>Request</code>
+    * [.get(id, callback()](#FlightStats.Alerts+get) ⇒ <code>Request</code>
+    * [.remove(id, callback()](#FlightStats.Alerts+remove) ⇒ <code>Request</code>
+    * [.simulate(options, callback()](#FlightStats.Alerts+simulate) ⇒ <code>Request</code>
+    * [.create(options, callback()](#FlightStats.Alerts+create) ⇒ <code>Request</code>
+
+
+-
+
+<a name="new_FlightStats.Alerts_new"></a>
+
+#### new Alerts(client)
+Alerts
+
+**Params**
+
+- client <code>[FlightStats](#FlightStats)</code>
+
+
+-
+
+<a name="FlightStats.Alerts+list"></a>
+
+#### alerts.list(maxId, callback() ⇒ <code>Request</code>
+List all registered rule IDs,
+optionally only up to a given `maxId`
+
+**Kind**: instance method of <code>[Alerts](#FlightStats.Alerts)</code>  
+**Params**
+
+- maxId <code>String</code> - optional, list only rules that are less than the specified max Rule ID
+- callback( <code>function</code> - error, rules )
+
+
+-
+
+<a name="FlightStats.Alerts+get"></a>
+
+#### alerts.get(id, callback() ⇒ <code>Request</code>
+Retrieve a registered rule by it's ID
+
+**Kind**: instance method of <code>[Alerts](#FlightStats.Alerts)</code>  
+**Params**
+
+- id <code>String</code>
+- callback( <code>function</code> - error, result )
+
+
+-
+
+<a name="FlightStats.Alerts+remove"></a>
+
+#### alerts.remove(id, callback() ⇒ <code>Request</code>
+Delete a registered rule by it's ID
+
+**Kind**: instance method of <code>[Alerts](#FlightStats.Alerts)</code>  
+**Params**
+
+- id <code>String</code>
+- callback( <code>function</code> - error, result )
+
+
+-
+
+<a name="FlightStats.Alerts+simulate"></a>
+
+#### alerts.simulate(options, callback() ⇒ <code>Request</code>
+Simulate a fake event for a fake flight
+
+**Kind**: instance method of <code>[Alerts](#FlightStats.Alerts)</code>  
+**Params**
+
+- options <code>Object</code>
+    - .airlineCode <code>String</code>
+    - .arrivalAirport <code>String</code>
+    - .deliverTo <code>String</code> - (can be smtp://username@domain.com for testing)
+    - .departureAirport <code>String</code>
+    - .flightNumber <code>String</code>
+    - [.extendedOptions] <code>Array.&lt;String&gt;</code> - optional
+    - .type <code>String</code> - optional (JSON|XML), defaults to JSON
+- callback( <code>function</code> - error, result )
+
+
+-
+
+<a name="FlightStats.Alerts+create"></a>
+
+#### alerts.create(options, callback() ⇒ <code>Request</code>
+Create an flight alert rule
+
+**Kind**: instance method of <code>[Alerts](#FlightStats.Alerts)</code>  
+**Params**
+
+- options <code>Object</code>
+    - .airlineCode <code>String</code>
+    - .arrivalAirport <code>String</code>
+    - .codeType <code>String</code>
+    - .data <code>String</code> - optional, custom key/value pairs to be included in delivered alerts
+    - .date <code>String</code>
+    - .deliverTo <code>String</code> - where alert will be delivered to, must accept POST data
+    - .departureAirport <code>String</code>
+    - .desc <code>String</code> - optional, description of the rule
+    - .direction <code>String</code> - optional (arr|dep), defaults to arriving
+    - .events <code>String</code> - comma separated list of events that should be emitted for the flight, defaults to [all]
+    - .flightNumber <code>String</code>
+    - .name <code>String</code> - optional, defaults to "Default"
+    - .type <code>String</code> - optional (JSON|XML), defaults to JSON
+    - [.extendedOptions] <code>Array.&lt;String&gt;</code> - optional
+- callback( <code>function</code> - error, result )
+
+
+-
+
+<a name="FlightStats.AirlineCategory"></a>
+
+### FlightStats.AirlineCategory : <code>Object.&lt;String, Object&gt;</code>
+The category of operation of the airline
+
+**Kind**: static property of <code>[FlightStats](#FlightStats)</code>  
+
+-
+
+<a name="FlightStats.CodeshareType"></a>
+
+### FlightStats.CodeshareType : <code>Object.&lt;String, Object&gt;</code>
+The codeshare relationship between this carrier and the operating carrier
+
+**Kind**: static property of <code>[FlightStats](#FlightStats)</code>  
+
+-
+
+<a name="FlightStats.FlightStatus"></a>
+
+### FlightStats.FlightStatus : <code>Object.&lt;String, String&gt;</code>
+The current status of the flight
+
+**Kind**: static property of <code>[FlightStats](#FlightStats)</code>  
+
+-
+
 <a name="FlightStats.defaults"></a>
 
 ### FlightStats.defaults : <code>Object</code>
 Default options
+
+**Kind**: static property of <code>[FlightStats](#FlightStats)</code>  
+
+-
+
+<a name="FlightStats.IrregularOperation"></a>
+
+### FlightStats.IrregularOperation : <code>Object.&lt;String, String&gt;</code>
+The type of the irregular operation
+
+**Kind**: static property of <code>[FlightStats](#FlightStats)</code>  
+
+-
+
+<a name="FlightStats.ServiceType"></a>
+
+### FlightStats.ServiceType : <code>Object.&lt;String, Object&gt;</code>
+The type of service offered for a flight
+
+**Kind**: static property of <code>[FlightStats](#FlightStats)</code>  
+
+-
+
+<a name="FlightStats.ServiceType"></a>
+
+### FlightStats.ServiceType : <code>Object.&lt;String, Object&gt;</code>
+The short name of the field that was updated
 
 **Kind**: static property of <code>[FlightStats](#FlightStats)</code>  
 
