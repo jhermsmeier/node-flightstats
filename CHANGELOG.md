@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.19.0
+
+- Add support for Alerts API
+- Remove `description` properties from responses
+
+## 0.18.0
+
+- Fix formatting on error
+- Fix a timezone offset bug
+
 ## 0.17.1
 
 - Fix use of dynamic Date in tests
