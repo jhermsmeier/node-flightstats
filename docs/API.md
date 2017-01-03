@@ -6,6 +6,7 @@
 * [FlightStats](#FlightStats)
     * [new FlightStats(options)](#new_FlightStats_new)
     * _instance_
+        * [.alerts](#FlightStats+alerts) : <code>[Alerts](#FlightStats.Alerts)</code>
         * [.getAirlines(options, callback)](#FlightStats+getAirlines) ⇒ <code>Request</code>
         * [.getAirports(options, callback)](#FlightStats+getAirports) ⇒ <code>Request</code>
         * [.lookup(options, callback)](#FlightStats+lookup) ⇒ <code>Request</code>
@@ -52,6 +53,15 @@
     - .appId <code>String</code>
     - .appKey <code>String</code>
 
+
+-
+
+<a name="FlightStats+alerts"></a>
+
+### flightStats.alerts : <code>[Alerts](#FlightStats.Alerts)</code>
+Flight Alerts API
+
+**Kind**: instance property of <code>[FlightStats](#FlightStats)</code>  
 
 -
 
