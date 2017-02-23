@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.19.1
+
+- Fix verbs for use with the four connection queries (@estesp, [#8](https://github.com/jhermsmeier/node-flightstats/pull/8))
+- Skip alerts API tests due to missing fixtures
+
 ## 0.19.0
 
 - Add support for Alerts API
@@ -78,7 +83,7 @@
 
 ## 0.12.1
 
-- Remove ES6 interpolated strings (@michaelkitson)
+- Remove ES6 interpolated strings (@michaelkitson, [#2](https://github.com/jhermsmeier/node-flightstats/pull/2))
 
 ## 0.12.0
 - Fixed credential parameters
