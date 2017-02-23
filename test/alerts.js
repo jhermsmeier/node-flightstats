@@ -10,7 +10,7 @@ function inspect( value ) {
   })
 }
 
-suite( 'Alerts', function() {
+suite.skip( 'Alerts', function() {
 
   var ruleId = null
 
