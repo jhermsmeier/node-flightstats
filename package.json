@@ -16,15 +16,15 @@
   ],
   "main": "lib/flightstats.js",
   "dependencies": {
-    "debug": "~2.6.0",
-    "moment-timezone": "~0.5.11",
-    "request": "~2.79.0"
+    "debug": "~2.6.3",
+    "moment-timezone": "~0.5.13",
+    "request": "~2.81.0"
   },
   "devDependencies": {
-    "dotenv": "~2.0.0",
-    "jsdoc-to-markdown": "~2.0.1",
+    "dotenv": "~4.0.0",
+    "jsdoc-to-markdown": "~3.0.0",
     "mocha": "~3.2.0",
-    "nock": "~9.0.2"
+    "nock": "~9.0.13"
   },
   "homepage": "https://github.com/jhermsmeier/node-flightstats",
   "repository": {
