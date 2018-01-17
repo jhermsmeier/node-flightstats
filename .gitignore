@@ -1,1 +1,6 @@
 .*
+*.log
+node_modules/
+.env
+.vscode/
+tmp
