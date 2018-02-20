@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.19.3
+
+- Update dependencies
+- Regenerate API documentation
+
+## 0.19.2
+
+- Update dependencies
+
 ## 0.19.1
 
 - Fix verbs for use with the four connection queries (@estesp, [#8](https://github.com/jhermsmeier/node-flightstats/pull/8))
