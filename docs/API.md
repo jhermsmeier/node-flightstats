@@ -6,7 +6,7 @@
 * [FlightStats](#FlightStats)
     * [new FlightStats(options)](#new_FlightStats_new)
     * _instance_
-        * [.alerts](#FlightStats+alerts) : <code>[Alerts](#FlightStats.Alerts)</code>
+        * [.alerts](#FlightStats+alerts) : [<code>Alerts</code>](#FlightStats.Alerts)
         * [.getAirlines(options, callback)](#FlightStats+getAirlines) ⇒ <code>Request</code>
         * [.getAirports(options, callback)](#FlightStats+getAirports) ⇒ <code>Request</code>
         * [.lookup(options, callback)](#FlightStats+lookup) ⇒ <code>Request</code>
@@ -40,7 +40,7 @@
         * [.filterByAirport(flights, airport, [direction])](#FlightStats.filterByAirport) ⇒ <code>Array.&lt;Flight&gt;</code>
 
 
--
+* * *
 
 <a name="new_FlightStats_new"></a>
 
@@ -54,23 +54,23 @@
     - .appKey <code>String</code>
 
 
--
+* * *
 
 <a name="FlightStats+alerts"></a>
 
-### flightStats.alerts : <code>[Alerts](#FlightStats.Alerts)</code>
+### flightStats.alerts : [<code>Alerts</code>](#FlightStats.Alerts)
 Flight Alerts API
 
-**Kind**: instance property of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance property of [<code>FlightStats</code>](#FlightStats)  
 
--
+* * *
 
 <a name="FlightStats+getAirlines"></a>
 
 ### flightStats.getAirlines(options, callback) ⇒ <code>Request</code>
 Retrieve a list of airlines
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Params**
 
 - options <code>Object</code>
@@ -82,14 +82,14 @@ Retrieve a list of airlines
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats+getAirports"></a>
 
 ### flightStats.getAirports(options, callback) ⇒ <code>Request</code>
 Retrieve a list of airports
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Params**
 
 - options <code>Object</code>
@@ -106,14 +106,14 @@ Retrieve a list of airports
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats+lookup"></a>
 
 ### flightStats.lookup(options, callback) ⇒ <code>Request</code>
 Look up a flight
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Params**
 
 - options <code>Object</code>
@@ -126,98 +126,98 @@ Look up a flight
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats+status"></a>
 
 ### flightStats.status(options, callback) ⇒ <code>Request</code>
 Get the live status of a flight
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Params**
 
 - options <code>Object</code> - see [.lookup()](#FlightStats+lookup)
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats+schedule"></a>
 
 ### flightStats.schedule(options, callback) ⇒ <code>Request</code>
 Get a flight's schedule status information
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Params**
 
 - options <code>Object</code> - see [.lookup()](#FlightStats+lookup)
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats+firstFlightIn"></a>
 
 ### flightStats.firstFlightIn(options, callback) ⇒ <code>Request</code>
 Get the first inbound flight between two airports
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Params**
 
 - options <code>Object</code> - see [.connections()](#FlightStats+connections)
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats+firstFlightOut"></a>
 
 ### flightStats.firstFlightOut(options, callback) ⇒ <code>Request</code>
 Get the first outbound flight between two airports
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Params**
 
 - options <code>Object</code> - see [.connections()](#FlightStats+connections)
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats+lastFlightIn"></a>
 
 ### flightStats.lastFlightIn(options, callback) ⇒ <code>Request</code>
 Get the last inbound flight between two airports
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Params**
 
 - options <code>Object</code> - see [.connections()](#FlightStats+connections)
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats+lastFlightOut"></a>
 
 ### flightStats.lastFlightOut(options, callback) ⇒ <code>Request</code>
 Get the last outbound flight between two airports
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Params**
 
 - options <code>Object</code> - see [.connections()](#FlightStats+connections)
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats+connections"></a>
 
 ### flightStats.connections(options, callback) ⇒ <code>Request</code>
 Get connecting flights between two airports
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Internal**: used by {first,last}Flight{In,Out} methods  
 **Params**
 
@@ -242,14 +242,14 @@ Get connecting flights between two airports
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats+flightRatings"></a>
 
 ### flightStats.flightRatings(options, callback) ⇒ <code>Request</code>
 Get ratings for a specified flight
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Params**
 
 - options <code>Object</code>
@@ -259,14 +259,14 @@ Get ratings for a specified flight
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats+routeRatings"></a>
 
 ### flightStats.routeRatings(options, callback) ⇒ <code>Request</code>
 Get ratings for a route between airports
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Params**
 
 - options <code>Object</code>
@@ -276,14 +276,14 @@ Get ratings for a route between airports
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats+flightsNear"></a>
 
 ### flightStats.flightsNear(options, callback) ⇒ <code>Request</code>
 Get flights near a given (lat,lng) coordinate, within a radius
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Params**
 
 - options <code>Object</code>
@@ -294,14 +294,14 @@ Get flights near a given (lat,lng) coordinate, within a radius
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats+flightsWithin"></a>
 
 ### flightStats.flightsWithin(options, callback) ⇒ <code>Request</code>
 Get flights within a given bounding box (lat,lng,lat,lng)
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Params**
 
 - options <code>Object</code>
@@ -312,14 +312,14 @@ Get flights within a given bounding box (lat,lng,lat,lng)
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats+routes"></a>
 
 ### flightStats.routes(options, callback) ⇒ <code>Request</code>
 Get routes between two airports
 
-**Kind**: instance method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: instance method of [<code>FlightStats</code>](#FlightStats)  
 **Params**
 
 - options <code>Object</code>
@@ -335,12 +335,12 @@ Get routes between two airports
 - callback <code>function</code>
 
 
--
+* * *
 
 <a name="FlightStats.Alerts"></a>
 
 ### FlightStats.Alerts
-**Kind**: static class of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: static class of [<code>FlightStats</code>](#FlightStats)  
 
 * [.Alerts](#FlightStats.Alerts)
     * [new Alerts(client)](#new_FlightStats.Alerts_new)
@@ -351,7 +351,7 @@ Get routes between two airports
     * [.create(options, callback()](#FlightStats.Alerts+create) ⇒ <code>Request</code>
 
 
--
+* * *
 
 <a name="new_FlightStats.Alerts_new"></a>
 
@@ -360,10 +360,10 @@ Alerts
 
 **Params**
 
-- client <code>[FlightStats](#FlightStats)</code>
+- client [<code>FlightStats</code>](#FlightStats)
 
 
--
+* * *
 
 <a name="FlightStats.Alerts+list"></a>
 
@@ -371,49 +371,49 @@ Alerts
 List all registered rule IDs,
 optionally only up to a given `maxId`
 
-**Kind**: instance method of <code>[Alerts](#FlightStats.Alerts)</code>  
+**Kind**: instance method of [<code>Alerts</code>](#FlightStats.Alerts)  
 **Params**
 
 - maxId <code>String</code> - optional, list only rules that are less than the specified max Rule ID
 - callback( <code>function</code> - error, rules )
 
 
--
+* * *
 
 <a name="FlightStats.Alerts+get"></a>
 
 #### alerts.get(id, callback() ⇒ <code>Request</code>
 Retrieve a registered rule by it's ID
 
-**Kind**: instance method of <code>[Alerts](#FlightStats.Alerts)</code>  
+**Kind**: instance method of [<code>Alerts</code>](#FlightStats.Alerts)  
 **Params**
 
 - id <code>String</code>
 - callback( <code>function</code> - error, result )
 
 
--
+* * *
 
 <a name="FlightStats.Alerts+remove"></a>
 
 #### alerts.remove(id, callback() ⇒ <code>Request</code>
 Delete a registered rule by it's ID
 
-**Kind**: instance method of <code>[Alerts](#FlightStats.Alerts)</code>  
+**Kind**: instance method of [<code>Alerts</code>](#FlightStats.Alerts)  
 **Params**
 
 - id <code>String</code>
 - callback( <code>function</code> - error, result )
 
 
--
+* * *
 
 <a name="FlightStats.Alerts+simulate"></a>
 
 #### alerts.simulate(options, callback() ⇒ <code>Request</code>
 Simulate a fake event for a fake flight
 
-**Kind**: instance method of <code>[Alerts](#FlightStats.Alerts)</code>  
+**Kind**: instance method of [<code>Alerts</code>](#FlightStats.Alerts)  
 **Params**
 
 - options <code>Object</code>
@@ -427,14 +427,14 @@ Simulate a fake event for a fake flight
 - callback( <code>function</code> - error, result )
 
 
--
+* * *
 
 <a name="FlightStats.Alerts+create"></a>
 
 #### alerts.create(options, callback() ⇒ <code>Request</code>
 Create an flight alert rule
 
-**Kind**: instance method of <code>[Alerts](#FlightStats.Alerts)</code>  
+**Kind**: instance method of [<code>Alerts</code>](#FlightStats.Alerts)  
 **Params**
 
 - options <code>Object</code>
@@ -455,77 +455,77 @@ Create an flight alert rule
 - callback( <code>function</code> - error, result )
 
 
--
+* * *
 
 <a name="FlightStats.AirlineCategory"></a>
 
 ### FlightStats.AirlineCategory : <code>Object.&lt;String, Object&gt;</code>
 The category of operation of the airline
 
-**Kind**: static property of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: static property of [<code>FlightStats</code>](#FlightStats)  
 
--
+* * *
 
 <a name="FlightStats.CodeshareType"></a>
 
 ### FlightStats.CodeshareType : <code>Object.&lt;String, Object&gt;</code>
 The codeshare relationship between this carrier and the operating carrier
 
-**Kind**: static property of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: static property of [<code>FlightStats</code>](#FlightStats)  
 
--
+* * *
 
 <a name="FlightStats.FlightStatus"></a>
 
 ### FlightStats.FlightStatus : <code>Object.&lt;String, String&gt;</code>
 The current status of the flight
 
-**Kind**: static property of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: static property of [<code>FlightStats</code>](#FlightStats)  
 
--
+* * *
 
 <a name="FlightStats.defaults"></a>
 
 ### FlightStats.defaults : <code>Object</code>
 Default options
 
-**Kind**: static property of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: static property of [<code>FlightStats</code>](#FlightStats)  
 
--
+* * *
 
 <a name="FlightStats.IrregularOperation"></a>
 
 ### FlightStats.IrregularOperation : <code>Object.&lt;String, String&gt;</code>
 The type of the irregular operation
 
-**Kind**: static property of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: static property of [<code>FlightStats</code>](#FlightStats)  
 
--
+* * *
 
 <a name="FlightStats.ServiceType"></a>
 
 ### FlightStats.ServiceType : <code>Object.&lt;String, Object&gt;</code>
 The type of service offered for a flight
 
-**Kind**: static property of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: static property of [<code>FlightStats</code>](#FlightStats)  
 
--
+* * *
 
 <a name="FlightStats.ServiceType"></a>
 
 ### FlightStats.ServiceType : <code>Object.&lt;String, Object&gt;</code>
 The short name of the field that was updated
 
-**Kind**: static property of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: static property of [<code>FlightStats</code>](#FlightStats)  
 
--
+* * *
 
 <a name="FlightStats.filterByAirport"></a>
 
 ### FlightStats.filterByAirport(flights, airport, [direction]) ⇒ <code>Array.&lt;Flight&gt;</code>
 Filter an array of flights by airport & direction
 
-**Kind**: static method of <code>[FlightStats](#FlightStats)</code>  
+**Kind**: static method of [<code>FlightStats</code>](#FlightStats)  
 **Returns**: <code>Array.&lt;Flight&gt;</code> - flights  
 **Params**
 
@@ -534,5 +534,5 @@ Filter an array of flights by airport & direction
 - [direction] <code>String</code> <code> = &#x27;arrival&#x27;</code>
 
 
--
+* * *
 
