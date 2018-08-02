@@ -51,7 +51,7 @@
     - [.baseUrl] <code>String</code> <code> = &#x27;https://api.flightstats.com/flex&#x27;</code> - optional
     - .userAgent <code>String</code> - optional
     - .appId <code>String</code>
-    - .appKey <code>String</code>
+    - .apiKey <code>String</code>
 
 
 * * *
