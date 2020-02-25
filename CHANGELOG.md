@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.21.0
+
+* 63282a77232e1e814a3ae094dfb35282b6ce09f2 - lib: Remove use of deprecated `request` module
+* d2431b48cdd67b074686ae083d56978bbaa86013 - package: Update dependencies
+* 969a8a83ca7f3473e619e71794aa7983303971d5 - remove config key config
+* e6c759ec11eaef69d00dd70f4a4290801aaaf012 - :fire: modify init config for flightstate
+
+## 0.20.0
+
+* 09a128cbb3e5b38095b83531fcf34c309dafd66f - Revert change to local date
+* 0b802633d49b54b16f5f66cf4928b6df30b47986 - Fix formatting for updatedDateFields
+
 ## 0.19.3
 
 - Update dependencies
